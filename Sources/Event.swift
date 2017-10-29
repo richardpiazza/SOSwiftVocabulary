@@ -1,9 +1,13 @@
 import Foundation
 
+public protocol EventConformance:
+                    CreativeWorkOrEvent
+                {}
+
 /// An event happening at a certain time and location, such as a concert, lecture, or festival.
 /// Ticketing information may be added via the offers property.
 /// Repeated events may be structured as separate Event objects.
-public protocol Event: Thing {
+public protocol Event: Thing, EventConformance {
     /// The subject matter of the content.
     var about: Thing? { get set }
     /// An actor, e.g. in tv, radio, movie, video games etc., or in an event. Actors can be associated with individual items or with a series, episode, clip.

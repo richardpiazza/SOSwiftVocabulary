@@ -53,6 +53,8 @@ public protocol Person: Thing, PersonConformance {
     var givenName: String? { get set }
     /// The Global Location Number (GLN, sometimes also referred to as International Location Number or ILN) of the respective organization, person, or place. The GLN is a 13-digit number used to identify parties and physical locations.
     var globalLocationNumber: String? { get set }
+    /// The Person's occupation. For past professions, use Role for expressing dates.
+    var hasOccupation: Occupation? { get set }
     /// Indicates an OfferCatalog listing for this Organization, Person, or Service.
     var hasOfferCatalog: OfferCatalog? { get set }
     /// Points-of-Sales operated by the organization or person.

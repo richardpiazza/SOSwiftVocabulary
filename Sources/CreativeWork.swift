@@ -1,6 +1,7 @@
 import Foundation
 
 public protocol CreativeWorkConformance:
+                    CreativeWorkOrEvent,
                     CreativeWorkOrURL,
                     CreativeWorkOrText,
                     CreativeWorkOrProductOrURL
@@ -53,6 +54,8 @@ public protocol CreativeWork: Thing, CreativeWorkConformance {
     var contentLocation: Place? { get set }
     /// Official rating of a piece of content—for example,'MPAA PG-13'.
     var contentRating: String? { get set }
+    /// The specific time described by a creative work, for works (e.g. articles, video objects etc.) that emphasise a particular moment within an Event.
+    var contentReferenceTime: DateTime? { get set }
     /// A secondary contributor to the CreativeWork or Event.
     var contributor: OrganizationOrPerson? { get set }
     /// The party holding the legal copyright to the CreativeWork.
@@ -125,6 +128,18 @@ public protocol CreativeWork: Thing, CreativeWorkConformance {
     var producer: OrganizationOrPerson?  { get set }
     /// The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller.
     var provider: OrganizationOrPerson?  { get set }
+    /// A publication event associated with the item.
+    var publication: PublicationEvent? { get set }
+    /// The publisher of the creative work.
+    var publisher: OrganizationOrPerson? { get set }
+    /// The publishing division which published the comic.
+    var publisherImprint: Organization? { get set }
+    /// The publishingPrinciples property indicates (typically via URL) a document describing the editorial principles of an Organization (or individual e.g. a Person writing a blog) that relate to their activities as a publisher, e.g. ethics or diversity policies. When applied to a CreativeWork (e.g. NewsArticle) the principles are those of the party primarily responsible for the creation of the CreativeWork.
+    /// While such policies are most typically expressed in natural language, sometimes related information (e.g. indicating a funder) can be expressed using schema.org terminology.
+    var publishingPrinciples: CreativeWorkOrURL? { get set }
+    /// The Event where the CreativeWork was recorded. The CreativeWork may capture all or part of the event.
+    /// - Inverse property: recordedIn.
+    var recordedAt: Event? { get set }
     /// The place and time the release was issued, expressed as a PublicationEvent.
     var releasedEvent: PublicationEvent?  { get set }
     /// A review of the item.
@@ -145,6 +160,9 @@ public protocol CreativeWork: Thing, CreativeWorkConformance {
     var thumbnailUrl: URL?  { get set }
     /// Approximate or typical time it takes to work with or through this learning resource for the typical intended target audience, e.g. 'P30M', 'P1H25M'.
     var timeRequired: Duration?  { get set }
+    /// The work that this work has been translated from. e.g. 物种起源 is a translationOf “On the Origin of Species”
+    /// - Inverse property: workTranslation.
+    var translationOfWork: CreativeWork? { get set }
     /// Organization or person who adapts a creative work to different languages, regional differences and technical requirements of a target market, or that translates during some event.
     var translator: OrganizationOrPerson?  { get set }
     /// The typical expected age range, e.g. '7-9', '11-'.
@@ -155,5 +173,8 @@ public protocol CreativeWork: Thing, CreativeWorkConformance {
     var video: VideoObject?  { get set }
     /// Example/instance/realization/derivation of the concept of this creative work. eg. The paperback edition, first edition, or eBook. Inverse property: exampleOfWork.
     var workExample: CreativeWork?  { get set }
+    /// A work that is a translation of the content of this work. e.g. 西遊記 has an English workTranslation “Journey to the West”,a German workTranslation “Monkeys Pilgerfahrt” and a Vietnamese translation Tây du ký bình khảo.
+    /// - Inverse property: translationOfWork.
+    var workTranslation: CreativeWork? { get set }
 }
 

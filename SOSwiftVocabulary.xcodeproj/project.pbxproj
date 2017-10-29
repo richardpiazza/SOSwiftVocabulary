@@ -142,6 +142,8 @@
 		E137CD631F7039D600CB175C /* ValueReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137CCDF1F7039D600CB175C /* ValueReference.swift */; };
 		E137CD641F7039D600CB175C /* VideoObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137CCE01F7039D600CB175C /* VideoObject.swift */; };
 		E137CD651F7039D600CB175C /* Website.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137CCE11F7039D600CB175C /* Website.swift */; };
+		E15286B31FA6591600A473A9 /* CreativeWorkOrEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15286B21FA6591600A473A9 /* CreativeWorkOrEvent.swift */; };
+		E15286B51FA6642A00A473A9 /* Occupation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15286B41FA6642A00A473A9 /* Occupation.swift */; };
 		F4682F296E507DF79C369F80 /* Pods_SOSwiftVocabularyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9980A6F2EE7B90EDD6F91F46 /* Pods_SOSwiftVocabularyTests.framework */; };
 		FF7BE5B1191BADB53F256295 /* Pods_SOSwiftVocabulary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011D47F4109BB279F26065EF /* Pods_SOSwiftVocabulary.framework */; };
 /* End PBXBuildFile section */
@@ -299,6 +301,8 @@
 		E137CCDF1F7039D600CB175C /* ValueReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueReference.swift; sourceTree = "<group>"; };
 		E137CCE01F7039D600CB175C /* VideoObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoObject.swift; sourceTree = "<group>"; };
 		E137CCE11F7039D600CB175C /* Website.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Website.swift; sourceTree = "<group>"; };
+		E15286B21FA6591600A473A9 /* CreativeWorkOrEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreativeWorkOrEvent.swift; sourceTree = "<group>"; };
+		E15286B41FA6642A00A473A9 /* Occupation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Occupation.swift; sourceTree = "<group>"; };
 		E16CE8142B936E045C759FF5 /* Pods-SOSwiftVocabularyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOSwiftVocabularyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SOSwiftVocabularyTests/Pods-SOSwiftVocabularyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FD866748A0BFDB6EC1F2E7AF /* Pods-SOSwiftVocabularyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOSwiftVocabularyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SOSwiftVocabularyTests/Pods-SOSwiftVocabularyTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -415,6 +419,7 @@
 				E137CC781F7039D600CB175C /* Course.swift */,
 				E137CC791F7039D600CB175C /* CourseInstance.swift */,
 				E137CC7A1F7039D600CB175C /* CreativeWork.swift */,
+				E15286B21FA6591600A473A9 /* CreativeWorkOrEvent.swift */,
 				E137CC7B1F7039D600CB175C /* CreativeWorkOrProductOrURL.swift */,
 				E137CC7C1F7039D600CB175C /* CreativeWorkOrText.swift */,
 				E137CC7D1F7039D600CB175C /* CreativeWorkOrURL.swift */,
@@ -471,6 +476,7 @@
 				E137CCB01F7039D600CB175C /* NewsArticle.swift */,
 				E137CCB11F7039D600CB175C /* Number.swift */,
 				E137CCB21F7039D600CB175C /* NumberOrText.swift */,
+				E15286B41FA6642A00A473A9 /* Occupation.swift */,
 				E137CCB31F7039D600CB175C /* Offer.swift */,
 				E137CCB41F7039D600CB175C /* OfferCatalog.swift */,
 				E137CCB51F7039D600CB175C /* OfferItemCondition.swift */,
@@ -757,6 +763,7 @@
 				E137CD461F7039D600CB175C /* PostalAddress.swift in Sources */,
 				E137CD581F7039D600CB175C /* Review.swift in Sources */,
 				E137CD4C1F7039D600CB175C /* ProductOrService.swift in Sources */,
+				E15286B51FA6642A00A473A9 /* Occupation.swift in Sources */,
 				E137CD501F7039D600CB175C /* PropertyValue.swift in Sources */,
 				E137CD631F7039D600CB175C /* ValueReference.swift in Sources */,
 				E137CD401F7039D600CB175C /* PerformingGroup.swift in Sources */,
@@ -777,6 +784,7 @@
 				E137CD311F7039D600CB175C /* MusicGroupOrPerson.swift in Sources */,
 				E137CD471F7039D600CB175C /* PostalAddressOrText.swift in Sources */,
 				E137CD211F7039D600CB175C /* ItemListOrder.swift in Sources */,
+				E15286B31FA6591600A473A9 /* CreativeWorkOrEvent.swift in Sources */,
 				E137CD261F7039D600CB175C /* ListItem.swift in Sources */,
 				E137CD3F1F7039D600CB175C /* OwnershipInfoOrProduct.swift in Sources */,
 				E137CD091F7039D600CB175C /* Demand.swift in Sources */,
