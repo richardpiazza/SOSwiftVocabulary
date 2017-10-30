@@ -23,13 +23,16 @@ public protocol Service: Intangible, ServiceConformance {
     /// A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.
     var category: PhysicalActivityCategoryOrThingOrText? { get set }
     /// Indicates an OfferCatalog listing for this Organization, Person, or Service.
-    var hasOfferCatalog: OfferCatalog? { get set }
+    /// - schema.org property name: hasOfferCatalog
+    var offerCatalog: OfferCatalog? { get set }
     /// The hours during which this service or contact is available.
     var hoursAvailable: [OpeningHoursSpecification]? { get set }
     /// A pointer to another, somehow related product (or multiple products).
-    var isRelatedTo: [ProductOrService]? { get set }
+    /// - schema.org property name: isRelatedTo
+    var relatedTo: [ProductOrService]? { get set }
     ///A pointer to another, functionally similar product (or multiple products).
-    var isSimilarTo: [ProductOrService]? { get set }
+    /// - schema.org property name: isSimilarTo
+    var similarTo: [ProductOrService]? { get set }
     /// An associated logo.
     var logo: ImageObjectOrURL? { get set }
     /// An offer to provide this item—for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event.

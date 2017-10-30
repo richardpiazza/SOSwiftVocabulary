@@ -41,13 +41,17 @@ public protocol Product: Thing, ProductConformance {
     /// The height of the item.
     var height: DistanceOrQuantitativeValue? { get set }
     /// A pointer to another product (or multiple products) for which this product is an accessory or spare part.
-    var isAccessoryOrSparePartFor: Product? { get set }
+    /// - schema.org property name: isAccessoryOrSpacePartFor
+    var accessoryOrSparePartFor: Product? { get set }
     /// A pointer to another product (or multiple products) for which this product is a consumable.
-    var isConsumableFor: Product? { get set }
+    /// - schema.org property name: isConsumableFor
+    var consumableFor: Product? { get set }
     /// A pointer to another, somehow related product (or multiple products).
-    var isRelatedTo: ProductOrService? { get set }
+    /// - schema.org property name: isRelatedTo
+    var relatedTo: ProductOrService? { get set }
     /// A pointer to another, functionally similar product (or multiple products).
-    var isSimilarTo: ProductOrService? { get set }
+    /// - schema.org property name: isSimilarTo
+    var similarTo: ProductOrService? { get set }
     /// A predefined value from OfferItemCondition or a textual description of the condition of the product or service, or the products or services included in the offer.
     var itemCondition: OfferItemCondition? { get set }
     /// An associated logo.

@@ -7,4 +7,3 @@ public protocol PublicationEvent: Event {
     /// A broadcast service associated with the publication event.
     var publishedOn: BroadcastService? { get set }
 }
-

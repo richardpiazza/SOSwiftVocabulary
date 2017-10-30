@@ -89,7 +89,8 @@ public protocol CreativeWork: Thing, CreativeWorkConformance {
     /// Genre of the creative work, broadcast channel or group.
     var genre: URLOrText?  { get set }
     /// Indicates a CreativeWork that is (in some sense) a part of this CreativeWork. Inverse property: isPartOf.
-    var hasPart: CreativeWork?  { get set }
+    /// - schema.org property name: hasPart
+    var part: CreativeWork?  { get set }
     /// Headline of the article.
     var headline: String?  { get set }
     /// The language of the content or performance or used in an action. Please use one of the language codes from the IETF BCP 47 standard.
@@ -101,11 +102,13 @@ public protocol CreativeWork: Thing, CreativeWorkConformance {
     /// A flag to signal that the publication is accessible for free.
     var isAccessibleForFree: Bool?  { get set }
     /// A resource that was used in the creation of this resource. This term can be repeated for multiple sources.
-    var isBasedOn: CreativeWorkOrProductOrURL?  { get set }
+    /// - schema.org property name: isBasedOn
+    var basedOn: CreativeWorkOrProductOrURL?  { get set }
     /// Indicates whether this content is family friendly.
     var isFamilyFriendly: Bool?  { get set }
     /// Indicates a CreativeWork that this CreativeWork is (in some sense) part of. Inverse property: hasPart.
-    var isPartOf: CreativeWork?  { get set }
+    /// - schema.org property name: isPartOf
+    var partOf: CreativeWork?  { get set }
     /// Keywords or tags used to describe this content. Multiple entries in a keywords list are typically delimited by commas.
     var keywords: String?  { get set }
     /// The predominant type or kind characterizing the learning resource. For example, 'presentation', 'handout'

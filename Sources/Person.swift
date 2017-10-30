@@ -56,9 +56,11 @@ public protocol Person: Thing, PersonConformance {
     /// The Person's occupation. For past professions, use Role for expressing dates.
     var hasOccupation: Occupation? { get set }
     /// Indicates an OfferCatalog listing for this Organization, Person, or Service.
-    var hasOfferCatalog: OfferCatalog? { get set }
+    /// - schema.org property name: hasOfferCatalog
+    var offerCatalog: OfferCatalog? { get set }
     /// Points-of-Sales operated by the organization or person.
-    var hasPOS: [Place]? { get set }
+    /// - schema.org property name: hasPOS
+    var pointsOfSales: [Place]? { get set }
     /// The height of the item.
     var height: DistanceOrQuantitativeValue? { get set }
     /// A contact location for a person's residence.

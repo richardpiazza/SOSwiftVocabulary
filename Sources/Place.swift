@@ -36,7 +36,8 @@ public protocol Place: Thing, PlaceConformance {
     /// The Global Location Number (GLN, sometimes also referred to as International Location Number or ILN) of the respective organization, person, or place. The GLN is a 13-digit number used to identify parties and physical locations.
     var globalLocationNumber: String? { get set }
     /// A URL to a map of the place.
-    var hasMap: MapOrURL? { get set }
+    /// - schema.org property name: hasMap
+    var pap: MapOrURL? { get set }
     /// The International Standard of Industrial Classification of All Economic Activities (ISIC), Revision 4 code for a particular organization, business person, or place.
     var isicV4: String? { get set }
     /// An associated logo.
