@@ -21,7 +21,7 @@ public protocol Service: Intangible, ServiceConformance {
     /// An entity that arranges for an exchange between a buyer and a seller. In most cases a broker never acquires or releases ownership of a product or service involved in an exchange. If it is not clear whether an entity is a broker, seller, or buyer, the latter two terms are preferred.
     var broker: OrganizationOrPerson? { get set }
     /// A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.
-    var category: TextOrThing? { get set }
+    var category: PhysicalActivityCategoryOrThingOrText? { get set }
     /// Indicates an OfferCatalog listing for this Organization, Person, or Service.
     var hasOfferCatalog: OfferCatalog? { get set }
     /// The hours during which this service or contact is available.
@@ -44,4 +44,6 @@ public protocol Service: Intangible, ServiceConformance {
     var serviceOutput: Thing? { get set }
     /// The type of service being offered, e.g. veterans' benefits, emergency relief, etc.
     var serviceType: String? { get set }
+    /// Human-readable terms of service documentation.
+    var termsOfService: String? { get set }
 }

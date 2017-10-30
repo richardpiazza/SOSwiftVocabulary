@@ -1,8 +1,10 @@
 import Foundation
 
 public protocol ThingConformance:
+                    DataFeedItemOrThingOrText,
                     ListItemOrTextOrThing,
-                    TextOrThing
+                    TextOrThing,
+                    PhysicalActivityCategoryOrThingOrText
                 {}
 
 /// The most generic type of item.

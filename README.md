@@ -8,4 +8,8 @@ Schema.org is a collaborative, community activity with a mission to create, main
 
 ### Schema.org
 
-This work is based on the 3.2 version of the Schema.org vocabulary.
+This work is based on the 3.4 version of the Schema.org vocabulary.
+
+### Significant Differences
+
+Although this body of work trys to adhere as closly as possibile to the defined vocabulary, some changes are required to make the API feel swifty.

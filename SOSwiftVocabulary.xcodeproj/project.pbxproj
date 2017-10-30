@@ -144,6 +144,25 @@
 		E137CD651F7039D600CB175C /* Website.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137CCE11F7039D600CB175C /* Website.swift */; };
 		E15286B31FA6591600A473A9 /* CreativeWorkOrEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15286B21FA6591600A473A9 /* CreativeWorkOrEvent.swift */; };
 		E15286B51FA6642A00A473A9 /* Occupation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15286B41FA6642A00A473A9 /* Occupation.swift */; };
+		E15286B71FA7575900A473A9 /* DataFeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15286B61FA7575900A473A9 /* DataFeedItem.swift */; };
+		E15286B91FA757F800A473A9 /* DataFeedItemOrThingOrText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15286B81FA757F800A473A9 /* DataFeedItemOrThingOrText.swift */; };
+		E15286BB1FA758DC00A473A9 /* DataCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15286BA1FA758DC00A473A9 /* DataCatalog.swift */; };
+		E15286BD1FA7595D00A473A9 /* DataDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15286BC1FA7595D00A473A9 /* DataDownload.swift */; };
+		E15286BF1FA75ABB00A473A9 /* ItemAvailability.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15286BE1FA75ABB00A473A9 /* ItemAvailability.swift */; };
+		E15286C11FA75B7F00A473A9 /* DeliveryMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15286C01FA75B7F00A473A9 /* DeliveryMethod.swift */; };
+		E15286C31FA75C7D00A473A9 /* BusinessFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15286C21FA75C7D00A473A9 /* BusinessFunction.swift */; };
+		E15286C51FA75D1000A473A9 /* BusinessEntityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15286C41FA75D1000A473A9 /* BusinessEntityType.swift */; };
+		E15286C71FA75DD300A473A9 /* GeoShapeOrPlaceOrText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15286C61FA75DD300A473A9 /* GeoShapeOrPlaceOrText.swift */; };
+		E15286C91FA75EA400A473A9 /* TypeAndQuantityNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15286C81FA75EA400A473A9 /* TypeAndQuantityNode.swift */; };
+		E15286CB1FA7600A00A473A9 /* WarrantyScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15286CA1FA7600A00A473A9 /* WarrantyScope.swift */; };
+		E15286CD1FA7607300A473A9 /* WarrantyPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15286CC1FA7607300A473A9 /* WarrantyPromise.swift */; };
+		E15286CF1FA762C100A473A9 /* MusicAlbumProduction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15286CE1FA762C100A473A9 /* MusicAlbumProduction.swift */; };
+		E15286D11FA7643E00A473A9 /* MusicAlbumRelease.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15286D01FA7643E00A473A9 /* MusicAlbumRelease.swift */; };
+		E15286D31FA764AF00A473A9 /* MusicReleaseFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15286D21FA764AF00A473A9 /* MusicReleaseFormat.swift */; };
+		E15286D51FA7651D00A473A9 /* MusicRelease.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15286D41FA7651D00A473A9 /* MusicRelease.swift */; };
+		E15286D71FA7669F00A473A9 /* MusicComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15286D61FA7669F00A473A9 /* MusicComposition.swift */; };
+		E15286D91FA76AC800A473A9 /* PhysicalActivityCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15286D81FA76AC800A473A9 /* PhysicalActivityCategory.swift */; };
+		E15286DB1FA76B4C00A473A9 /* PhysicalActivityCategoryOrThingOrText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15286DA1FA76B4C00A473A9 /* PhysicalActivityCategoryOrThingOrText.swift */; };
 		F4682F296E507DF79C369F80 /* Pods_SOSwiftVocabularyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9980A6F2EE7B90EDD6F91F46 /* Pods_SOSwiftVocabularyTests.framework */; };
 		FF7BE5B1191BADB53F256295 /* Pods_SOSwiftVocabulary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011D47F4109BB279F26065EF /* Pods_SOSwiftVocabulary.framework */; };
 /* End PBXBuildFile section */
@@ -303,6 +322,26 @@
 		E137CCE11F7039D600CB175C /* Website.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Website.swift; sourceTree = "<group>"; };
 		E15286B21FA6591600A473A9 /* CreativeWorkOrEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreativeWorkOrEvent.swift; sourceTree = "<group>"; };
 		E15286B41FA6642A00A473A9 /* Occupation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Occupation.swift; sourceTree = "<group>"; };
+		E15286B61FA7575900A473A9 /* DataFeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFeedItem.swift; sourceTree = "<group>"; };
+		E15286B81FA757F800A473A9 /* DataFeedItemOrThingOrText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFeedItemOrThingOrText.swift; sourceTree = "<group>"; };
+		E15286BA1FA758DC00A473A9 /* DataCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCatalog.swift; sourceTree = "<group>"; };
+		E15286BC1FA7595D00A473A9 /* DataDownload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDownload.swift; sourceTree = "<group>"; };
+		E15286BE1FA75ABB00A473A9 /* ItemAvailability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemAvailability.swift; sourceTree = "<group>"; };
+		E15286C01FA75B7F00A473A9 /* DeliveryMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryMethod.swift; sourceTree = "<group>"; };
+		E15286C21FA75C7D00A473A9 /* BusinessFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessFunction.swift; sourceTree = "<group>"; };
+		E15286C41FA75D1000A473A9 /* BusinessEntityType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessEntityType.swift; sourceTree = "<group>"; };
+		E15286C61FA75DD300A473A9 /* GeoShapeOrPlaceOrText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoShapeOrPlaceOrText.swift; sourceTree = "<group>"; };
+		E15286C81FA75EA400A473A9 /* TypeAndQuantityNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAndQuantityNode.swift; sourceTree = "<group>"; };
+		E15286CA1FA7600A00A473A9 /* WarrantyScope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarrantyScope.swift; sourceTree = "<group>"; };
+		E15286CC1FA7607300A473A9 /* WarrantyPromise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarrantyPromise.swift; sourceTree = "<group>"; };
+		E15286CE1FA762C100A473A9 /* MusicAlbumProduction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicAlbumProduction.swift; sourceTree = "<group>"; };
+		E15286D01FA7643E00A473A9 /* MusicAlbumRelease.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicAlbumRelease.swift; sourceTree = "<group>"; };
+		E15286D21FA764AF00A473A9 /* MusicReleaseFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicReleaseFormat.swift; sourceTree = "<group>"; };
+		E15286D41FA7651D00A473A9 /* MusicRelease.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicRelease.swift; sourceTree = "<group>"; };
+		E15286D61FA7669F00A473A9 /* MusicComposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicComposition.swift; sourceTree = "<group>"; };
+		E15286D81FA76AC800A473A9 /* PhysicalActivityCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalActivityCategory.swift; sourceTree = "<group>"; };
+		E15286DA1FA76B4C00A473A9 /* PhysicalActivityCategoryOrThingOrText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalActivityCategoryOrThingOrText.swift; sourceTree = "<group>"; };
+		E15286DC1FA7CEE500A473A9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E16CE8142B936E045C759FF5 /* Pods-SOSwiftVocabularyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOSwiftVocabularyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SOSwiftVocabularyTests/Pods-SOSwiftVocabularyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FD866748A0BFDB6EC1F2E7AF /* Pods-SOSwiftVocabularyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOSwiftVocabularyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SOSwiftVocabularyTests/Pods-SOSwiftVocabularyTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -351,6 +390,7 @@
 		E137CADC1F7012DB00CB175C = {
 			isa = PBXGroup;
 			children = (
+				E15286DC1FA7CEE500A473A9 /* README.md */,
 				E137CC5D1F7039D600CB175C /* Sources */,
 				E137CAE81F7012DB00CB175C /* SOSwiftVocabulary */,
 				E137CAF31F7012DB00CB175C /* SOSwiftVocabularyTests */,
@@ -410,6 +450,8 @@
 				E137CC6F1F7039D600CB175C /* Brand.swift */,
 				E137CC701F7039D600CB175C /* BrandOrOrganization.swift */,
 				E137CC711F7039D600CB175C /* BroadcastService.swift */,
+				E15286C41FA75D1000A473A9 /* BusinessEntityType.swift */,
+				E15286C21FA75C7D00A473A9 /* BusinessFunction.swift */,
 				E137CC721F7039D600CB175C /* Comment.swift */,
 				E137CC731F7039D600CB175C /* ContactPoint.swift */,
 				E137CC741F7039D600CB175C /* ContactPointOption.swift */,
@@ -423,13 +465,18 @@
 				E137CC7B1F7039D600CB175C /* CreativeWorkOrProductOrURL.swift */,
 				E137CC7C1F7039D600CB175C /* CreativeWorkOrText.swift */,
 				E137CC7D1F7039D600CB175C /* CreativeWorkOrURL.swift */,
+				E15286BA1FA758DC00A473A9 /* DataCatalog.swift */,
+				E15286BC1FA7595D00A473A9 /* DataDownload.swift */,
 				E137CC7E1F7039D600CB175C /* DataFeed.swift */,
+				E15286B61FA7575900A473A9 /* DataFeedItem.swift */,
+				E15286B81FA757F800A473A9 /* DataFeedItemOrThingOrText.swift */,
 				E137CC7F1F7039D600CB175C /* Dataset.swift */,
 				E137CC801F7039D600CB175C /* DateOnly.swift */,
 				E137CC811F7039D600CB175C /* DateOnlyOrDateTime.swift */,
 				E137CC821F7039D600CB175C /* DateTime.swift */,
 				E137CC831F7039D600CB175C /* DateTimeOrTextOrURL.swift */,
 				E137CC841F7039D600CB175C /* DayOfWeek.swift */,
+				E15286C01FA75B7F00A473A9 /* DeliveryMethod.swift */,
 				E137CC851F7039D600CB175C /* Demand.swift */,
 				E137CC861F7039D600CB175C /* Distance.swift */,
 				E137CC871F7039D600CB175C /* DistanceOrQuantitativeValue.swift */,
@@ -445,6 +492,7 @@
 				E137CC911F7039D600CB175C /* GeoCoordinates.swift */,
 				E137CC921F7039D600CB175C /* GeoCoordinatesOrGeoShape.swift */,
 				E137CC931F7039D600CB175C /* GeoShape.swift */,
+				E15286C61FA75DD300A473A9 /* GeoShapeOrPlaceOrText.swift */,
 				E137CC941F7039D600CB175C /* Identifier.swift */,
 				E137CC951F7039D600CB175C /* ImageObject.swift */,
 				E137CC961F7039D600CB175C /* ImageObjectOrPhotograph.swift */,
@@ -453,6 +501,7 @@
 				E137CC991F7039D600CB175C /* IntegerOrText.swift */,
 				E137CC9A1F7039D600CB175C /* InteractionCounter.swift */,
 				E137CC9B1F7039D600CB175C /* Interactivity.swift */,
+				E15286BE1FA75ABB00A473A9 /* ItemAvailability.swift */,
 				E137CC9C1F7039D600CB175C /* ItemList.swift */,
 				E137CC9D1F7039D600CB175C /* ItemListOrder.swift */,
 				E137CC9E1F7039D600CB175C /* ItemListOrderOrText.swift */,
@@ -469,10 +518,15 @@
 				E137CCA91F7039D600CB175C /* MonetaryAmount.swift */,
 				E137CCAA1F7039D600CB175C /* MonetaryAmountOrPriceSpecification.swift */,
 				E137CCAB1F7039D600CB175C /* MusicAlbum.swift */,
+				E15286CE1FA762C100A473A9 /* MusicAlbumProduction.swift */,
+				E15286D01FA7643E00A473A9 /* MusicAlbumRelease.swift */,
+				E15286D61FA7669F00A473A9 /* MusicComposition.swift */,
 				E137CCAC1F7039D600CB175C /* MusicGroup.swift */,
 				E137CCAD1F7039D600CB175C /* MusicGroupOrPerson.swift */,
 				E137CCAE1F7039D600CB175C /* MusicPlaylist.swift */,
 				E137CCAF1F7039D600CB175C /* MusicRecording.swift */,
+				E15286D41FA7651D00A473A9 /* MusicRelease.swift */,
+				E15286D21FA764AF00A473A9 /* MusicReleaseFormat.swift */,
 				E137CCB01F7039D600CB175C /* NewsArticle.swift */,
 				E137CCB11F7039D600CB175C /* Number.swift */,
 				E137CCB21F7039D600CB175C /* NumberOrText.swift */,
@@ -490,6 +544,8 @@
 				E137CCBD1F7039D600CB175C /* Person.swift */,
 				E137CCBE1F7039D600CB175C /* PersonOrURL.swift */,
 				E137CCBF1F7039D600CB175C /* Photograph.swift */,
+				E15286D81FA76AC800A473A9 /* PhysicalActivityCategory.swift */,
+				E15286DA1FA76B4C00A473A9 /* PhysicalActivityCategoryOrThingOrText.swift */,
 				E137CCC01F7039D600CB175C /* Place.swift */,
 				E137CCC11F7039D600CB175C /* PlaceOrPostalAddressOrText.swift */,
 				E137CCC21F7039D600CB175C /* PostalAddress.swift */,
@@ -520,9 +576,12 @@
 				E137CCDB1F7039D600CB175C /* TextOrURL.swift */,
 				E137CCDC1F7039D600CB175C /* Thing.swift */,
 				E137CCDD1F7039D600CB175C /* Time.swift */,
+				E15286C81FA75EA400A473A9 /* TypeAndQuantityNode.swift */,
 				E137CCDE1F7039D600CB175C /* Value.swift */,
 				E137CCDF1F7039D600CB175C /* ValueReference.swift */,
 				E137CCE01F7039D600CB175C /* VideoObject.swift */,
+				E15286CC1FA7607300A473A9 /* WarrantyPromise.swift */,
+				E15286CA1FA7600A00A473A9 /* WarrantyScope.swift */,
 				E137CCE11F7039D600CB175C /* Website.swift */,
 			);
 			path = Sources;
@@ -730,19 +789,23 @@
 				E137CD451F7039D600CB175C /* PlaceOrPostalAddressOrText.swift in Sources */,
 				E137CD141F7039D600CB175C /* GenderOrText.swift in Sources */,
 				E137CD481F7039D600CB175C /* PriceSpecification.swift in Sources */,
+				E15286D91FA76AC800A473A9 /* PhysicalActivityCategory.swift in Sources */,
 				E137CD531F7039D600CB175C /* QualitativeValue.swift in Sources */,
 				E137CD281F7039D600CB175C /* LocationFeatureSpecification.swift in Sources */,
+				E15286C31FA75C7D00A473A9 /* BusinessFunction.swift in Sources */,
 				E137CD021F7039D600CB175C /* DataFeed.swift in Sources */,
 				E137CCFF1F7039D600CB175C /* CreativeWorkOrProductOrURL.swift in Sources */,
 				E137CD0C1F7039D600CB175C /* Duration.swift in Sources */,
 				E137CD0F1F7039D600CB175C /* EntryPoint.swift in Sources */,
 				E137CD5B1F7039D600CB175C /* SoftwareApplication.swift in Sources */,
+				E15286CD1FA7607300A473A9 /* WarrantyPromise.swift in Sources */,
 				E137CCFC1F7039D600CB175C /* Course.swift in Sources */,
 				E137CD3C1F7039D600CB175C /* OrganizationOrPerson.swift in Sources */,
 				E137CD071F7039D600CB175C /* DateTimeOrTextOrURL.swift in Sources */,
 				E137CD4B1F7039D600CB175C /* ProductModelOrText.swift in Sources */,
 				E137CD351F7039D600CB175C /* Number.swift in Sources */,
 				E137CCF21F7039D600CB175C /* AudioObject.swift in Sources */,
+				E15286BF1FA75ABB00A473A9 /* ItemAvailability.swift in Sources */,
 				E137CD521F7039D600CB175C /* PublicationEvent.swift in Sources */,
 				E137CD0A1F7039D600CB175C /* Distance.swift in Sources */,
 				E137CD591F7039D600CB175C /* Service.swift in Sources */,
@@ -754,6 +817,7 @@
 				E137CD561F7039D600CB175C /* Question.swift in Sources */,
 				E137CCF71F7039D600CB175C /* ContactPoint.swift in Sources */,
 				E137CD621F7039D600CB175C /* Value.swift in Sources */,
+				E15286D71FA7669F00A473A9 /* MusicComposition.swift in Sources */,
 				E137CD361F7039D600CB175C /* NumberOrText.swift in Sources */,
 				E137CD4A1F7039D600CB175C /* ProductModel.swift in Sources */,
 				E137CD431F7039D600CB175C /* Photograph.swift in Sources */,
@@ -767,16 +831,19 @@
 				E137CD501F7039D600CB175C /* PropertyValue.swift in Sources */,
 				E137CD631F7039D600CB175C /* ValueReference.swift in Sources */,
 				E137CD401F7039D600CB175C /* PerformingGroup.swift in Sources */,
+				E15286B91FA757F800A473A9 /* DataFeedItemOrThingOrText.swift in Sources */,
 				E137CD491F7039D600CB175C /* Product.swift in Sources */,
 				E137CD321F7039D600CB175C /* MusicPlaylist.swift in Sources */,
 				E137CCF41F7039D600CB175C /* BrandOrOrganization.swift in Sources */,
 				E137CCFD1F7039D600CB175C /* CourseInstance.swift in Sources */,
+				E15286BB1FA758DC00A473A9 /* DataCatalog.swift in Sources */,
 				E137CD041F7039D600CB175C /* DateOnly.swift in Sources */,
 				E137CCF31F7039D600CB175C /* Brand.swift in Sources */,
 				E137CD1C1F7039D600CB175C /* Intangible.swift in Sources */,
 				E137CD5A1F7039D600CB175C /* ServiceChannel.swift in Sources */,
 				E137CCE61F7039D600CB175C /* AccessMode.swift in Sources */,
 				E137CD271F7039D600CB175C /* ListItemOrTextOrThing.swift in Sources */,
+				E15286D51FA7651D00A473A9 /* MusicRelease.swift in Sources */,
 				E137CCEF1F7039D600CB175C /* AreaServed.swift in Sources */,
 				E137CD411F7039D600CB175C /* Person.swift in Sources */,
 				E137CCE31F7039D600CB175C /* AccessibilityControl.swift in Sources */,
@@ -784,6 +851,7 @@
 				E137CD311F7039D600CB175C /* MusicGroupOrPerson.swift in Sources */,
 				E137CD471F7039D600CB175C /* PostalAddressOrText.swift in Sources */,
 				E137CD211F7039D600CB175C /* ItemListOrder.swift in Sources */,
+				E15286C11FA75B7F00A473A9 /* DeliveryMethod.swift in Sources */,
 				E15286B31FA6591600A473A9 /* CreativeWorkOrEvent.swift in Sources */,
 				E137CD261F7039D600CB175C /* ListItem.swift in Sources */,
 				E137CD3F1F7039D600CB175C /* OwnershipInfoOrProduct.swift in Sources */,
@@ -793,13 +861,16 @@
 				E137CD5F1F7039D600CB175C /* TextOrURL.swift in Sources */,
 				E137CD571F7039D600CB175C /* Rating.swift in Sources */,
 				E137CD2B1F7039D600CB175C /* MapType.swift in Sources */,
+				E15286B71FA7575900A473A9 /* DataFeedItem.swift in Sources */,
 				E137CD441F7039D600CB175C /* Place.swift in Sources */,
 				E137CD3A1F7039D600CB175C /* OpeningHoursSpecification.swift in Sources */,
 				E137CD3E1F7039D600CB175C /* OwnershipInfo.swift in Sources */,
 				E137CCF91F7039D600CB175C /* ContactPointOrPlace.swift in Sources */,
+				E15286CF1FA762C100A473A9 /* MusicAlbumProduction.swift in Sources */,
 				E137CCE21F7039D600CB175C /* AccessibilityAPI.swift in Sources */,
 				E137CD1D1F7039D600CB175C /* IntegerOrText.swift in Sources */,
 				E137CD2A1F7039D600CB175C /* MapOrURL.swift in Sources */,
+				E15286D11FA7643E00A473A9 /* MusicAlbumRelease.swift in Sources */,
 				E137CD651F7039D600CB175C /* Website.swift in Sources */,
 				E137CD151F7039D600CB175C /* GeoCoordinates.swift in Sources */,
 				E137CD291F7039D600CB175C /* Map.swift in Sources */,
@@ -813,9 +884,12 @@
 				E137CD0B1F7039D600CB175C /* DistanceOrQuantitativeValue.swift in Sources */,
 				E137CD171F7039D600CB175C /* GeoShape.swift in Sources */,
 				E137CD101F7039D600CB175C /* Enumeration.swift in Sources */,
+				E15286BD1FA7595D00A473A9 /* DataDownload.swift in Sources */,
 				E137CD371F7039D600CB175C /* Offer.swift in Sources */,
+				E15286C91FA75EA400A473A9 /* TypeAndQuantityNode.swift in Sources */,
 				E137CD541F7039D600CB175C /* QuantitativeValue.swift in Sources */,
 				E137CCF11F7039D600CB175C /* Audience.swift in Sources */,
+				E15286C51FA75D1000A473A9 /* BusinessEntityType.swift in Sources */,
 				E137CD4F1F7039D600CB175C /* ProgramMembership.swift in Sources */,
 				E137CD601F7039D600CB175C /* Thing.swift in Sources */,
 				E137CCE81F7039D600CB175C /* Action.swift in Sources */,
@@ -830,6 +904,8 @@
 				E137CD221F7039D600CB175C /* ItemListOrderOrText.swift in Sources */,
 				E137CCE41F7039D600CB175C /* AccessibilityFeature.swift in Sources */,
 				E137CD131F7039D600CB175C /* Gender.swift in Sources */,
+				E15286C71FA75DD300A473A9 /* GeoShapeOrPlaceOrText.swift in Sources */,
+				E15286DB1FA76B4C00A473A9 /* PhysicalActivityCategoryOrThingOrText.swift in Sources */,
 				E137CCE91F7039D600CB175C /* ActionStatus.swift in Sources */,
 				E137CCFE1F7039D600CB175C /* CreativeWork.swift in Sources */,
 				E137CD2F1F7039D600CB175C /* MusicAlbum.swift in Sources */,
@@ -848,12 +924,14 @@
 				E137CCF81F7039D600CB175C /* ContactPointOption.swift in Sources */,
 				E137CD0D1F7039D600CB175C /* EducationalOrganization.swift in Sources */,
 				E137CD121F7039D600CB175C /* EventStatus.swift in Sources */,
+				E15286CB1FA7600A00A473A9 /* WarrantyScope.swift in Sources */,
 				E137CD611F7039D600CB175C /* Time.swift in Sources */,
 				E137CD2E1F7039D600CB175C /* MonetaryAmountOrPriceSpecification.swift in Sources */,
 				E137CD5D1F7039D600CB175C /* StructuredValue.swift in Sources */,
 				E137CD391F7039D600CB175C /* OfferItemCondition.swift in Sources */,
 				E137CD551F7039D600CB175C /* Quantity.swift in Sources */,
 				E137CD421F7039D600CB175C /* PersonOrURL.swift in Sources */,
+				E15286D31FA764AF00A473A9 /* MusicReleaseFormat.swift in Sources */,
 				E137CCF01F7039D600CB175C /* Article.swift in Sources */,
 				E137CD2C1F7039D600CB175C /* MediaObject.swift in Sources */,
 				E137CD511F7039D600CB175C /* PropertyValueOrText.swift in Sources */,
