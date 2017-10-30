@@ -13,3 +13,9 @@ This work is based on the 3.4 version of the Schema.org vocabulary.
 ### Significant Differences
 
 Although this body of work trys to adhere as closly as possibile to the defined vocabulary, some changes are required to make the API feel swifty.
+
+__Float__
+
+Schema.org uses 'Float' as it's floating-point decimal type. 'Double' is the standard floating-point type in Swift, so double replaces all instances of float.
+
+
