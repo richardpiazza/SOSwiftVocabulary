@@ -14,7 +14,8 @@ public protocol CreativeWork: Thing, CreativeWorkConformance {
     /// The human sensory perceptual system or cognitive faculty through which a person may process or perceive information.
     var accessMode: AccessMode? { get set }
     /// A list of single or combined accessModes that are sufficient to understand all the intellectual content of a resource.
-    var accessModeSufficient: [AccessModeSufficient]? { get set }
+    /// - schema.org property name: accessModeSufficient
+    var accessModeSufficients: [AccessModeSufficient]? { get set }
     /// Indicates that the resource is compatible with the referenced accessibility API
     var accessibilityAPI: AccessibilityAPI? { get set }
     /// Identifies input methods that are sufficient to fully control the described resource

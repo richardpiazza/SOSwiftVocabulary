@@ -21,11 +21,14 @@ public protocol Organization: Thing, OrganizationConformance {
     /// The geographic area where a service or offered item is provided.
     var areaServed: AreaServed? { get set }
     /// An award won by or for this item
-    var award: [String]? { get set }
+    /// - schema.org property name: award
+    var awards: [String]? { get set }
     /// The brand(s) associated with a product or service, or the brand(s) maintained by an organization or business person.
-    var brand: [BrandOrOrganization]? { get set }
+    /// - schema.org property name: brand
+    var brands: [BrandOrOrganization]? { get set }
     /// A contact point for a person or organization.
-    var contactPoint: [ContactPoint]? { get set }
+    /// - schema.org property name: contactPoint
+    var contactPoints: [ContactPoint]? { get set }
     /// For an Organization (e.g. NewsMediaOrganization), a statement describing (in news media, the newsroom’s) disclosure and correction policy for errors.
     var correctionsPolicy: CreativeWorkOrURL? { get set }
     /// A relationship between an organization and a department of that organization, also described as an organization (allowing different urls, logos, opening hours). For example: a store with a pharmacy, or a bakery with a cafe.
@@ -39,15 +42,18 @@ public protocol Organization: Thing, OrganizationConformance {
     /// Email address.
     var email: String? { get set }
     /// Someone working for this organization.
-    var employee: [Person]? { get set }
+    /// - schema.org property name: employee
+    var employees: [Person]? { get set }
     /// Statement about ethics policy, e.g. of a NewsMediaOrganization regarding journalistic and publishing practices, or of a Restaurant, a page describing food source policies. In the case of a NewsMediaOrganization, an ethicsPolicy is typically a statement describing the personal, organizational, and corporate standards of behavior expected by the organization.
     var ethicsPolicy: CreativeWorkOrURL? { get set }
     /// Upcoming or past event associated with this place, organization, or action.
-    var event: [Event]? { get set }
+    /// - schema.org property name: event
+    var events: [Event]? { get set }
     /// The fax number.
     var faxNumber: String? { get set }
     /// A person who founded this organization.
-    var founder: [Person]? { get set }
+    /// - schema.org property name: founder
+    var founders: [Person]? { get set }
     /// The date that this organization was founded.
     var foundingDate: DateOnly? { get set }
     /// The place where the Organization was founded.
@@ -94,7 +100,8 @@ public protocol Organization: Thing, OrganizationConformance {
     /// While such policies are most typically expressed in natural language, sometimes related information (e.g. indicating a funder) can be expressed using schema.org terminology.
     var publishingPrinciples: CreativeWorkOrURL? { get set }
     /// A review of the item.
-    var review: [Review]? { get set }
+    /// - schema.org property name: review
+    var reviews: [Review]? { get set }
     /// A pointer to products or services sought by the organization or person (demand).
     var seeks: [Demand]? { get set }
     /// A person or organization that supports a thing through a pledge, promise, or financial contribution. e.g. a sponsor of a Medical Study or a corporate sponsor of an event.

@@ -18,19 +18,23 @@ public protocol Person: Thing, PersonConformance {
     /// Inverse property: alumni.
     var alumniOf: EducationalOrganizationOrOrganization? { get set }
     /// An award won by or for this item.
-    var award: [String]? { get set }
+    /// - schema.org property name: award
+    var awards: [String]? { get set }
     /// Date of birth.
     var birthDate: DateOnly? { get set }
     /// The place where the person was born.
     var birthPlace: Place? { get set }
     /// The brand(s) associated with a product or service, or the brand(s) maintained by an organization or business person.
-    var brand: [BrandOrOrganization]? { get set }
+    /// - schema.org property name: brand
+    var brands: [BrandOrOrganization]? { get set }
     /// A child of the person.
     var children: [Person]? { get set }
     /// A colleague of the person.
-    var colleague: [PersonOrURL]? { get set }
+    /// - schema.org property name: colleague
+    var colleagues: [PersonOrURL]? { get set }
     /// A contact point for a person or organization.
-    var contactPoint: [ContactPoint]? { get set }
+    /// - schema.org property name: contactPoint
+    var contactPoints: [ContactPoint]? { get set }
     /// Date of death.
     var deathDate: DateOnly? { get set }
     /// The place where the person died.
@@ -90,7 +94,8 @@ public protocol Person: Thing, PersonConformance {
     /// Products owned by the organization or person.
     var owns: [ProductOrService]? { get set }
     /// A parent of this person.
-    var parent: [Person]? { get set }
+    /// - schema.org property name: parent
+    var parents: [Person]? { get set }
     /// Event that this person is a performer or participant in.
     var performerIn: Event? { get set }
     /// The publishingPrinciples property indicates (typically via URL) a document describing the editorial principles of an Organization (or individual e.g. a Person writing a blog) that relate to their activities as a publisher, e.g. ethics or diversity policies. When applied to a CreativeWork (e.g. NewsArticle) the principles are those of the party primarily responsible for the creation of the CreativeWork.
@@ -101,7 +106,8 @@ public protocol Person: Thing, PersonConformance {
     /// A pointer to products or services sought by the organization or person (demand).
     var seeks: [Demand]? { get set }
     /// A sibling of the person.
-    var sibling: [Person]? { get set }
+    /// - schema.org property name: sibling
+    var siblings: [Person]? { get set }
     /// A person or organization that supports a thing through a pledge, promise, or financial contribution. e.g. a sponsor of a Medical Study or a corporate sponsor of an event.
     var sponsor: OrganizationOrPerson? { get set }
     /// The person's spouse.

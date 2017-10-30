@@ -26,9 +26,11 @@ public protocol Place: Thing, PlaceConformance {
     var containedInPlace: Place? { get set }
     /// The basic containment relation between a place and another that it contains.
     /// Inverse property: containedInPlace.
-    var containsPlace: [Place]? { get set }
+    /// - schema.org property name: containesPlace
+    var containsPlaces: [Place]? { get set }
     /// Upcoming or past event associated with this place, organization, or action.
-    var event: [Event]? { get set }
+    /// - schema.org property name: event
+    var events: [Event]? { get set }
     /// The fax number.
     var faxNumber: String? { get set }
     /// The geo coordinates of the place.
@@ -47,9 +49,11 @@ public protocol Place: Thing, PlaceConformance {
     /// The opening hours of a certain place.
     var openingHoursSpecification: [OpeningHoursSpecification]? { get set }
     /// A photograph of this place.
-    var photo: [ImageObjectOrPhotograph]? { get set }
+    /// - schema.org property name: photo
+    var photos: [ImageObjectOrPhotograph]? { get set }
     /// A review of the item.
-    var review: [Review]? { get set }
+    /// - schema.org property name: review
+    var reviews: [Review]? { get set }
     /// Indicates whether it is allowed to smoke in the place, e.g. in the restaurant, hotel or hotel room.
     var smokingAllowed: Bool? { get set }
     /// The special opening hours of a certain place.
