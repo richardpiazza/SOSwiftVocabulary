@@ -2,7 +2,7 @@ import Foundation
 
 public protocol ProductConformance:
                     CreativeWorkOrProductOrURL,
-                    ProductOrTextOrURL,
+                    ProductOrURLOrText,
                     ProductOrService,
                     OwnershipInfoOrProduct,
                     ProductOrText
@@ -23,7 +23,7 @@ public protocol Product: Thing, ProductConformance {
     /// The brand(s) associated with a product or service, or the brand(s) maintained by an organization or business person.
     var brand: BrandOrOrganization? { get set }
     /// A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.
-    var category: TextOrThing? { get set }
+    var category: ThingOrText? { get set }
     /// The color of the product.
     var color: String? { get set }
     /// The depth of the item.
@@ -55,7 +55,7 @@ public protocol Product: Thing, ProductConformance {
     /// The manufacturer of the product.
     var manufacturer: Organization? { get set }
     /// A material that something is made from, e.g. leather, wool, cotton, paper.
-    var material: ProductOrTextOrURL? { get set }
+    var material: ProductOrURLOrText? { get set }
     /// The model of the product. Use with the URL of a ProductModel or a textual representation of the model identifier. The URL of the ProductModel can be from an external source. It is recommended to additionally provide strong product identifiers via the gtin8/gtin13/gtin14 and mpn properties.
     var model: ProductModelOrText? { get set }
     /// The Manufacturer Part Number (MPN) of the product, or the product to which the offer refers.

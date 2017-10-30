@@ -83,11 +83,11 @@ public protocol CreativeWork: Thing, CreativeWorkConformance {
     /// A creative work that this work is an example/instance/realization/derivation of. Inverse property: workExample.
     var exampleOfWork: CreativeWork? { get set }
     /// Media type, typically MIME format (see IANA site) of the content e.g. application/zip of a SoftwareApplication binary. In cases where a CreativeWork has several media type representations, 'encoding' can be used to indicate each MediaObject alongside particular fileFormat information. Unregistered or niche file formats can be indicated instead via the most appropriate URL, e.g. defining Web page or a Wikipedia entry.
-    var fileFormat: TextOrURL?  { get set }
+    var fileFormat: URLOrText?  { get set }
     /// A person or organization that supports (sponsors) something through some kind of financial contribution.
     var funder: OrganizationOrPerson?  { get set }
     /// Genre of the creative work, broadcast channel or group.
-    var genre: TextOrURL?  { get set }
+    var genre: URLOrText?  { get set }
     /// Indicates a CreativeWork that is (in some sense) a part of this CreativeWork. Inverse property: isPartOf.
     var hasPart: CreativeWork?  { get set }
     /// Headline of the article.
@@ -117,7 +117,7 @@ public protocol CreativeWork: Thing, CreativeWorkConformance {
     /// Indicates the primary entity described in some page or other CreativeWork. Inverse property: mainEntityOfPage.
     var mainEntity: Thing?  { get set }
     /// A material that something is made from, e.g. leather, wool, cotton, paper.
-    var material: ProductOrTextOrURL?  { get set }
+    var material: ProductOrURLOrText?  { get set }
     /// Indicates that the CreativeWork contains a reference to, but is not necessarily about a concept.
     var mentions: Thing?  { get set }
     /// An offer to provide this item—for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event.
@@ -145,7 +145,7 @@ public protocol CreativeWork: Thing, CreativeWorkConformance {
     /// A review of the item.
     var review: Review?  { get set }
     /// Indicates (by URL or string) a particular version of a schema used in some CreativeWork. For example, a document could declare a schemaVersion using an URL such as http://schema.org/version/2.0/ if precise indication of schema version was required by some application.
-    var schemaVersion: TextOrURL?  { get set }
+    var schemaVersion: URLOrText?  { get set }
     /// The Organization on whose behalf the creator was working.
     var sourceOrganization: Organization?  { get set }
     /// The spatialCoverage of a CreativeWork indicates the place(s) which are the focus of the content. It is a subproperty of contentLocation intended primarily for more technical and detailed materials. For example with a Dataset, it indicates areas that the dataset describes: a dataset of New York weather would have spatialCoverage which was the place: the state of New York.
@@ -153,7 +153,7 @@ public protocol CreativeWork: Thing, CreativeWorkConformance {
     /// A person or organization that supports a thing through a pledge, promise, or financial contribution. e.g. a sponsor of a Medical Study or a corporate sponsor of an event.
     var sponsor: OrganizationOrPerson?  { get set }
     /// The temporalCoverage of a CreativeWork indicates the period that the content applies to, i.e. that it describes, either as a DateTime or as a textual string indicating a time period in ISO 8601 time interval format. In the case of a Dataset it will typically indicate the relevant time period in a precise notation (e.g. for a 2011 census dataset, the year 2011 would be written "2011/2012"). Other forms of content e.g. ScholarlyArticle, Book, TVSeries or TVEpisode may indicate their temporalCoverage in broader terms - textually or via well-known URL. Written works such as books may sometimes have precise temporal coverage too, e.g. a work set in 1939 - 1945 can be indicated in ISO 8601 interval format format via "1939/1945".
-    var temporalCoverage: DateTimeOrTextOrURL?  { get set }
+    var temporalCoverage: DateTimeOrURLOrText?  { get set }
     /// The textual content of this CreativeWork.
     var text: String?  { get set }
     /// A thumbnail image relevant to the Thing.

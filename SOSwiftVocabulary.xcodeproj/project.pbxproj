@@ -47,7 +47,7 @@
 		E137CD041F7039D600CB175C /* DateOnly.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137CC801F7039D600CB175C /* DateOnly.swift */; };
 		E137CD051F7039D600CB175C /* DateOnlyOrDateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137CC811F7039D600CB175C /* DateOnlyOrDateTime.swift */; };
 		E137CD061F7039D600CB175C /* DateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137CC821F7039D600CB175C /* DateTime.swift */; };
-		E137CD071F7039D600CB175C /* DateTimeOrTextOrURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137CC831F7039D600CB175C /* DateTimeOrTextOrURL.swift */; };
+		E137CD071F7039D600CB175C /* DateTimeOrURLOrText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137CC831F7039D600CB175C /* DateTimeOrURLOrText.swift */; };
 		E137CD081F7039D600CB175C /* DayOfWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137CC841F7039D600CB175C /* DayOfWeek.swift */; };
 		E137CD091F7039D600CB175C /* Demand.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137CC851F7039D600CB175C /* Demand.swift */; };
 		E137CD0A1F7039D600CB175C /* Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137CC861F7039D600CB175C /* Distance.swift */; };
@@ -79,7 +79,7 @@
 		E137CD241F7039D600CB175C /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137CCA01F7039D600CB175C /* Language.swift */; };
 		E137CD251F7039D600CB175C /* LanguageOrText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137CCA11F7039D600CB175C /* LanguageOrText.swift */; };
 		E137CD261F7039D600CB175C /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137CCA21F7039D600CB175C /* ListItem.swift */; };
-		E137CD271F7039D600CB175C /* ListItemOrTextOrThing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137CCA31F7039D600CB175C /* ListItemOrTextOrThing.swift */; };
+		E137CD271F7039D600CB175C /* ListItemOrThingOrText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137CCA31F7039D600CB175C /* ListItemOrThingOrText.swift */; };
 		E137CD281F7039D600CB175C /* LocationFeatureSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137CCA41F7039D600CB175C /* LocationFeatureSpecification.swift */; };
 		E137CD291F7039D600CB175C /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137CCA51F7039D600CB175C /* Map.swift */; };
 		E137CD2A1F7039D600CB175C /* MapOrURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137CCA61F7039D600CB175C /* MapOrURL.swift */; };
@@ -118,7 +118,7 @@
 		E137CD4B1F7039D600CB175C /* ProductModelOrText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137CCC71F7039D600CB175C /* ProductModelOrText.swift */; };
 		E137CD4C1F7039D600CB175C /* ProductOrService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137CCC81F7039D600CB175C /* ProductOrService.swift */; };
 		E137CD4D1F7039D600CB175C /* ProductOrText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137CCC91F7039D600CB175C /* ProductOrText.swift */; };
-		E137CD4E1F7039D600CB175C /* ProductOrTextOrURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137CCCA1F7039D600CB175C /* ProductOrTextOrURL.swift */; };
+		E137CD4E1F7039D600CB175C /* ProductOrURLOrText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137CCCA1F7039D600CB175C /* ProductOrURLOrText.swift */; };
 		E137CD4F1F7039D600CB175C /* ProgramMembership.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137CCCB1F7039D600CB175C /* ProgramMembership.swift */; };
 		E137CD501F7039D600CB175C /* PropertyValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137CCCC1F7039D600CB175C /* PropertyValue.swift */; };
 		E137CD511F7039D600CB175C /* PropertyValueOrText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137CCCD1F7039D600CB175C /* PropertyValueOrText.swift */; };
@@ -134,8 +134,8 @@
 		E137CD5B1F7039D600CB175C /* SoftwareApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137CCD71F7039D600CB175C /* SoftwareApplication.swift */; };
 		E137CD5C1F7039D600CB175C /* SoftwareApplicationOrWebsite.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137CCD81F7039D600CB175C /* SoftwareApplicationOrWebsite.swift */; };
 		E137CD5D1F7039D600CB175C /* StructuredValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137CCD91F7039D600CB175C /* StructuredValue.swift */; };
-		E137CD5E1F7039D600CB175C /* TextOrThing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137CCDA1F7039D600CB175C /* TextOrThing.swift */; };
-		E137CD5F1F7039D600CB175C /* TextOrURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137CCDB1F7039D600CB175C /* TextOrURL.swift */; };
+		E137CD5E1F7039D600CB175C /* ThingOrText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137CCDA1F7039D600CB175C /* ThingOrText.swift */; };
+		E137CD5F1F7039D600CB175C /* URLOrText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137CCDB1F7039D600CB175C /* URLOrText.swift */; };
 		E137CD601F7039D600CB175C /* Thing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137CCDC1F7039D600CB175C /* Thing.swift */; };
 		E137CD611F7039D600CB175C /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137CCDD1F7039D600CB175C /* Time.swift */; };
 		E137CD621F7039D600CB175C /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137CCDE1F7039D600CB175C /* Value.swift */; };
@@ -225,7 +225,7 @@
 		E137CC801F7039D600CB175C /* DateOnly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateOnly.swift; sourceTree = "<group>"; };
 		E137CC811F7039D600CB175C /* DateOnlyOrDateTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateOnlyOrDateTime.swift; sourceTree = "<group>"; };
 		E137CC821F7039D600CB175C /* DateTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTime.swift; sourceTree = "<group>"; };
-		E137CC831F7039D600CB175C /* DateTimeOrTextOrURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTimeOrTextOrURL.swift; sourceTree = "<group>"; };
+		E137CC831F7039D600CB175C /* DateTimeOrURLOrText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTimeOrURLOrText.swift; sourceTree = "<group>"; };
 		E137CC841F7039D600CB175C /* DayOfWeek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayOfWeek.swift; sourceTree = "<group>"; };
 		E137CC851F7039D600CB175C /* Demand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Demand.swift; sourceTree = "<group>"; };
 		E137CC861F7039D600CB175C /* Distance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Distance.swift; sourceTree = "<group>"; };
@@ -257,7 +257,7 @@
 		E137CCA01F7039D600CB175C /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		E137CCA11F7039D600CB175C /* LanguageOrText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageOrText.swift; sourceTree = "<group>"; };
 		E137CCA21F7039D600CB175C /* ListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
-		E137CCA31F7039D600CB175C /* ListItemOrTextOrThing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemOrTextOrThing.swift; sourceTree = "<group>"; };
+		E137CCA31F7039D600CB175C /* ListItemOrThingOrText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemOrThingOrText.swift; sourceTree = "<group>"; };
 		E137CCA41F7039D600CB175C /* LocationFeatureSpecification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationFeatureSpecification.swift; sourceTree = "<group>"; };
 		E137CCA51F7039D600CB175C /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		E137CCA61F7039D600CB175C /* MapOrURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapOrURL.swift; sourceTree = "<group>"; };
@@ -296,7 +296,7 @@
 		E137CCC71F7039D600CB175C /* ProductModelOrText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductModelOrText.swift; sourceTree = "<group>"; };
 		E137CCC81F7039D600CB175C /* ProductOrService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductOrService.swift; sourceTree = "<group>"; };
 		E137CCC91F7039D600CB175C /* ProductOrText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductOrText.swift; sourceTree = "<group>"; };
-		E137CCCA1F7039D600CB175C /* ProductOrTextOrURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductOrTextOrURL.swift; sourceTree = "<group>"; };
+		E137CCCA1F7039D600CB175C /* ProductOrURLOrText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductOrURLOrText.swift; sourceTree = "<group>"; };
 		E137CCCB1F7039D600CB175C /* ProgramMembership.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramMembership.swift; sourceTree = "<group>"; };
 		E137CCCC1F7039D600CB175C /* PropertyValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyValue.swift; sourceTree = "<group>"; };
 		E137CCCD1F7039D600CB175C /* PropertyValueOrText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyValueOrText.swift; sourceTree = "<group>"; };
@@ -312,8 +312,8 @@
 		E137CCD71F7039D600CB175C /* SoftwareApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoftwareApplication.swift; sourceTree = "<group>"; };
 		E137CCD81F7039D600CB175C /* SoftwareApplicationOrWebsite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoftwareApplicationOrWebsite.swift; sourceTree = "<group>"; };
 		E137CCD91F7039D600CB175C /* StructuredValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuredValue.swift; sourceTree = "<group>"; };
-		E137CCDA1F7039D600CB175C /* TextOrThing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextOrThing.swift; sourceTree = "<group>"; };
-		E137CCDB1F7039D600CB175C /* TextOrURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextOrURL.swift; sourceTree = "<group>"; };
+		E137CCDA1F7039D600CB175C /* ThingOrText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThingOrText.swift; sourceTree = "<group>"; };
+		E137CCDB1F7039D600CB175C /* URLOrText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLOrText.swift; sourceTree = "<group>"; };
 		E137CCDC1F7039D600CB175C /* Thing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Thing.swift; sourceTree = "<group>"; };
 		E137CCDD1F7039D600CB175C /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		E137CCDE1F7039D600CB175C /* Value.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Value.swift; sourceTree = "<group>"; };
@@ -474,7 +474,7 @@
 				E137CC801F7039D600CB175C /* DateOnly.swift */,
 				E137CC811F7039D600CB175C /* DateOnlyOrDateTime.swift */,
 				E137CC821F7039D600CB175C /* DateTime.swift */,
-				E137CC831F7039D600CB175C /* DateTimeOrTextOrURL.swift */,
+				E137CC831F7039D600CB175C /* DateTimeOrURLOrText.swift */,
 				E137CC841F7039D600CB175C /* DayOfWeek.swift */,
 				E15286C01FA75B7F00A473A9 /* DeliveryMethod.swift */,
 				E137CC851F7039D600CB175C /* Demand.swift */,
@@ -509,7 +509,7 @@
 				E137CCA01F7039D600CB175C /* Language.swift */,
 				E137CCA11F7039D600CB175C /* LanguageOrText.swift */,
 				E137CCA21F7039D600CB175C /* ListItem.swift */,
-				E137CCA31F7039D600CB175C /* ListItemOrTextOrThing.swift */,
+				E137CCA31F7039D600CB175C /* ListItemOrThingOrText.swift */,
 				E137CCA41F7039D600CB175C /* LocationFeatureSpecification.swift */,
 				E137CCA51F7039D600CB175C /* Map.swift */,
 				E137CCA61F7039D600CB175C /* MapOrURL.swift */,
@@ -556,7 +556,7 @@
 				E137CCC71F7039D600CB175C /* ProductModelOrText.swift */,
 				E137CCC81F7039D600CB175C /* ProductOrService.swift */,
 				E137CCC91F7039D600CB175C /* ProductOrText.swift */,
-				E137CCCA1F7039D600CB175C /* ProductOrTextOrURL.swift */,
+				E137CCCA1F7039D600CB175C /* ProductOrURLOrText.swift */,
 				E137CCCB1F7039D600CB175C /* ProgramMembership.swift */,
 				E137CCCC1F7039D600CB175C /* PropertyValue.swift */,
 				E137CCCD1F7039D600CB175C /* PropertyValueOrText.swift */,
@@ -572,11 +572,11 @@
 				E137CCD71F7039D600CB175C /* SoftwareApplication.swift */,
 				E137CCD81F7039D600CB175C /* SoftwareApplicationOrWebsite.swift */,
 				E137CCD91F7039D600CB175C /* StructuredValue.swift */,
-				E137CCDA1F7039D600CB175C /* TextOrThing.swift */,
-				E137CCDB1F7039D600CB175C /* TextOrURL.swift */,
 				E137CCDC1F7039D600CB175C /* Thing.swift */,
+				E137CCDA1F7039D600CB175C /* ThingOrText.swift */,
 				E137CCDD1F7039D600CB175C /* Time.swift */,
 				E15286C81FA75EA400A473A9 /* TypeAndQuantityNode.swift */,
+				E137CCDB1F7039D600CB175C /* URLOrText.swift */,
 				E137CCDE1F7039D600CB175C /* Value.swift */,
 				E137CCDF1F7039D600CB175C /* ValueReference.swift */,
 				E137CCE01F7039D600CB175C /* VideoObject.swift */,
@@ -801,7 +801,7 @@
 				E15286CD1FA7607300A473A9 /* WarrantyPromise.swift in Sources */,
 				E137CCFC1F7039D600CB175C /* Course.swift in Sources */,
 				E137CD3C1F7039D600CB175C /* OrganizationOrPerson.swift in Sources */,
-				E137CD071F7039D600CB175C /* DateTimeOrTextOrURL.swift in Sources */,
+				E137CD071F7039D600CB175C /* DateTimeOrURLOrText.swift in Sources */,
 				E137CD4B1F7039D600CB175C /* ProductModelOrText.swift in Sources */,
 				E137CD351F7039D600CB175C /* Number.swift in Sources */,
 				E137CCF21F7039D600CB175C /* AudioObject.swift in Sources */,
@@ -842,7 +842,7 @@
 				E137CD1C1F7039D600CB175C /* Intangible.swift in Sources */,
 				E137CD5A1F7039D600CB175C /* ServiceChannel.swift in Sources */,
 				E137CCE61F7039D600CB175C /* AccessMode.swift in Sources */,
-				E137CD271F7039D600CB175C /* ListItemOrTextOrThing.swift in Sources */,
+				E137CD271F7039D600CB175C /* ListItemOrThingOrText.swift in Sources */,
 				E15286D51FA7651D00A473A9 /* MusicRelease.swift in Sources */,
 				E137CCEF1F7039D600CB175C /* AreaServed.swift in Sources */,
 				E137CD411F7039D600CB175C /* Person.swift in Sources */,
@@ -858,7 +858,7 @@
 				E137CD091F7039D600CB175C /* Demand.swift in Sources */,
 				E137CCE71F7039D600CB175C /* AccessModeSufficient.swift in Sources */,
 				E137CCFA1F7039D600CB175C /* Country.swift in Sources */,
-				E137CD5F1F7039D600CB175C /* TextOrURL.swift in Sources */,
+				E137CD5F1F7039D600CB175C /* URLOrText.swift in Sources */,
 				E137CD571F7039D600CB175C /* Rating.swift in Sources */,
 				E137CD2B1F7039D600CB175C /* MapType.swift in Sources */,
 				E15286B71FA7575900A473A9 /* DataFeedItem.swift in Sources */,
@@ -909,8 +909,8 @@
 				E137CCE91F7039D600CB175C /* ActionStatus.swift in Sources */,
 				E137CCFE1F7039D600CB175C /* CreativeWork.swift in Sources */,
 				E137CD2F1F7039D600CB175C /* MusicAlbum.swift in Sources */,
-				E137CD4E1F7039D600CB175C /* ProductOrTextOrURL.swift in Sources */,
-				E137CD5E1F7039D600CB175C /* TextOrThing.swift in Sources */,
+				E137CD4E1F7039D600CB175C /* ProductOrURLOrText.swift in Sources */,
+				E137CD5E1F7039D600CB175C /* ThingOrText.swift in Sources */,
 				E137CD051F7039D600CB175C /* DateOnlyOrDateTime.swift in Sources */,
 				E137CCEB1F7039D600CB175C /* AggregateRating.swift in Sources */,
 				E137CD331F7039D600CB175C /* MusicRecording.swift in Sources */,

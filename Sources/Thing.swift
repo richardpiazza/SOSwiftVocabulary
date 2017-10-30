@@ -2,8 +2,8 @@ import Foundation
 
 public protocol ThingConformance:
                     DataFeedItemOrThingOrText,
-                    ListItemOrTextOrThing,
-                    TextOrThing,
+                    ListItemOrThingOrText,
+                    ThingOrText,
                     PhysicalActivityCategoryOrThingOrText
                 {}
 

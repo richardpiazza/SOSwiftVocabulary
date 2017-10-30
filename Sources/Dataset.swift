@@ -13,7 +13,7 @@ public protocol Dataset: CreativeWork {
     /// For example, if variableMeasured is: molecule concentration, measurementTechnique could be: "mass spectrometry" or "nmr spectroscopy" or "colorimetry" or "immunofluorescence".
     /// If the variableMeasured is "depression rating", the measurementTechnique could be "Zung Scale" or "HAM-D" or "Beck Depression Inventory".
     /// If there are several variableMeasured properties recorded for some given data object, use a PropertyValue for each variableMeasured and attach the corresponding measurementTechnique.
-    var measurementTechnique: TextOrURL? { get set }
+    var measurementTechnique: URLOrText? { get set }
     /// The variableMeasured property can indicate (repeated as necessary) the variables that are measured in some dataset, either described as text or as pairs of identifier and description using PropertyValue.
     var variableMeasured: PropertyValueOrText? { get set }
 }
