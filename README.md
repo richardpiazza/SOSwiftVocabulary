@@ -6,7 +6,9 @@ The Schema.org structured data vocabulary defined as a series of swift protocols
 
 Schema.org is a collaborative, community activity with a mission to create, maintain, and promote schemas for structured data on the Internet, on web pages, in email messages, and beyond. This library implements some of the core vocabulary as a series of Swift protocols.
 
-### How to Use
+This work is based on the 3.4 version of the Schema.org vocabulary.
+
+## How to Use
 
 __CocoaPods__
 
@@ -16,9 +18,6 @@ __Swift Package Manager__
 
     .package(url: "https://github.com/richardpiazza/SOSwift", .upToNextMajor(from: "1.0.0"))
 
-### Schema.org
-
-This work is based on the 3.4 version of the Schema.org vocabulary.
 
 ### Significant Differences
 
@@ -35,5 +34,4 @@ Many of the classes use a has/is prefix on non-boolan variable names. This vocab
 __Pluralization__
 
 Classes with singular names of clearly arrays of types has been plurarlized for clarity and consistency.
-
 
