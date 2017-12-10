@@ -343,6 +343,9 @@
 		E15286DA1FA76B4C00A473A9 /* PhysicalActivityCategoryOrThingOrText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalActivityCategoryOrThingOrText.swift; sourceTree = "<group>"; };
 		E15286DC1FA7CEE500A473A9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E16CE8142B936E045C759FF5 /* Pods-SOSwiftVocabularyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOSwiftVocabularyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SOSwiftVocabularyTests/Pods-SOSwiftVocabularyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E1EA1D5A1FDD770700DABEA9 /* SOSwiftVocabulary.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SOSwiftVocabulary.podspec; sourceTree = "<group>"; };
+		E1EA1D5B1FDD770700DABEA9 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		E1EA1D5C1FDD770800DABEA9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		FD866748A0BFDB6EC1F2E7AF /* Pods-SOSwiftVocabularyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOSwiftVocabularyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SOSwiftVocabularyTests/Pods-SOSwiftVocabularyTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -390,6 +393,9 @@
 		E137CADC1F7012DB00CB175C = {
 			isa = PBXGroup;
 			children = (
+				E1EA1D5C1FDD770800DABEA9 /* LICENSE */,
+				E1EA1D5B1FDD770700DABEA9 /* Package.swift */,
+				E1EA1D5A1FDD770700DABEA9 /* SOSwiftVocabulary.podspec */,
 				E15286DC1FA7CEE500A473A9 /* README.md */,
 				E137CC5D1F7039D600CB175C /* Sources */,
 				E137CAE81F7012DB00CB175C /* SOSwiftVocabulary */,

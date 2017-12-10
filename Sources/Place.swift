@@ -39,7 +39,7 @@ public protocol Place: Thing, PlaceConformance {
     var globalLocationNumber: String? { get set }
     /// A URL to a map of the place.
     /// - schema.org property name: hasMap
-    var pap: MapOrURL? { get set }
+    var map: MapOrURL? { get set }
     /// The International Standard of Industrial Classification of All Economic Activities (ISIC), Revision 4 code for a particular organization, business person, or place.
     var isicV4: String? { get set }
     /// An associated logo.
