@@ -18,5 +18,5 @@ public protocol MusicRecording: CreativeWork, MusicRecordingConformance {
     var isrcCode: String? { get set }
     /// The composition this track is a recording of.
     /// - Inverse property: recordedAs.
-    var recodingOf: MusicComposition? { get set }
+    var recordingOf: MusicComposition? { get set }
 }
