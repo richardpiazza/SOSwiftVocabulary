@@ -437,6 +437,14 @@
 		E137CC5D1F7039D600CB175C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				E13FC1331FEAA775005EE3AD /* SOSwiftVocabulary */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		E13FC1331FEAA775005EE3AD /* SOSwiftVocabulary */ = {
+			isa = PBXGroup;
+			children = (
 				E137CC5E1F7039D600CB175C /* AccessibilityAPI.swift */,
 				E137CC5F1F7039D600CB175C /* AccessibilityControl.swift */,
 				E137CC601F7039D600CB175C /* AccessibilityFeature.swift */,
@@ -591,14 +599,22 @@
 				E15286CA1FA7600A00A473A9 /* WarrantyScope.swift */,
 				E137CCE11F7039D600CB175C /* Website.swift */,
 			);
-			path = Sources;
+			path = SOSwiftVocabulary;
+			sourceTree = "<group>";
+		};
+		E13FC1341FEAA7E3005EE3AD /* SOSwiftVocabularyTests */ = {
+			isa = PBXGroup;
+			children = (
+				E1659C9A1FE9BA1200ADEAD7 /* ThingTests.swift */,
+			);
+			path = SOSwiftVocabularyTests;
 			sourceTree = "<group>";
 		};
 		E1659C961FE9B96B00ADEAD7 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				E13FC1341FEAA7E3005EE3AD /* SOSwiftVocabularyTests */,
 				E1659C971FE9B98A00ADEAD7 /* LinuxMain.swift */,
-				E1659C9A1FE9BA1200ADEAD7 /* ThingTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";

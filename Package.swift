@@ -12,7 +12,7 @@ let package = Package(
         
     ],
     targets: [
-        .target(name: "SOSwiftVocabulary", dependencies: [], path: "Sources"),
-        .testTarget(name: "SOSwiftVocabularyTests", dependencies: ["SOSwiftVocabulary"], path: "Tests")
+        .target(name: "SOSwiftVocabulary", dependencies: [], path: "Sources/SOSwiftVocabulary"),
+        .testTarget(name: "SOSwiftVocabularyTests", dependencies: ["SOSwiftVocabulary"], path: "Tests/SOSwiftVocabularyTests")
     ]
 )
