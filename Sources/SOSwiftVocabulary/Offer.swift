@@ -76,7 +76,7 @@ public protocol Offer: Intangible {
     var priceValidUntil: DateOnly? { get set }
     /// A review of the item. Supersedes reviews.
     /// - schema.org property name: review
-    var reviews: Review? { get set }
+    var reviews: [Review]? { get set }
     /// An entity which offers (sells / leases / lends / loans) the services / goods. A seller may also be a provider. Supersedes merchant, vendor.
     var seller: OrganizationOrPerson? { get set }
     /// The serial number or any alphanumeric identifier of a particular product. When attached to an offer, it is a shortcut for the serial number of the product included in the offer.
