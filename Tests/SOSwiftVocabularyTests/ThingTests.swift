@@ -22,10 +22,6 @@ class ThingTests: XCTestCase {
             return "Thing"
         }
         
-        static var explicitSubtypes: [Thing.Type] {
-            return []
-        }
-        
         var additionalType: URL?
         var alternativeName: String?
         var description: String?
