@@ -163,8 +163,6 @@
 		E15286D91FA76AC800A473A9 /* PhysicalActivityCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15286D81FA76AC800A473A9 /* PhysicalActivityCategory.swift */; };
 		E15286DB1FA76B4C00A473A9 /* PhysicalActivityCategoryOrThingOrText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15286DA1FA76B4C00A473A9 /* PhysicalActivityCategoryOrThingOrText.swift */; };
 		E1659C9B1FE9BA1200ADEAD7 /* ThingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1659C9A1FE9BA1200ADEAD7 /* ThingTests.swift */; };
-		F4682F296E507DF79C369F80 /* Pods_SOSwiftVocabularyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9980A6F2EE7B90EDD6F91F46 /* Pods_SOSwiftVocabularyTests.framework */; };
-		FF7BE5B1191BADB53F256295 /* Pods_SOSwiftVocabulary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011D47F4109BB279F26065EF /* Pods_SOSwiftVocabulary.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -178,10 +176,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		011D47F4109BB279F26065EF /* Pods_SOSwiftVocabulary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SOSwiftVocabulary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5331187105951F13518DD808 /* Pods-SOSwiftVocabulary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOSwiftVocabulary.release.xcconfig"; path = "Pods/Target Support Files/Pods-SOSwiftVocabulary/Pods-SOSwiftVocabulary.release.xcconfig"; sourceTree = "<group>"; };
-		9980A6F2EE7B90EDD6F91F46 /* Pods_SOSwiftVocabularyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SOSwiftVocabularyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C8626E461C41FCB64C1D4D71 /* Pods-SOSwiftVocabulary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOSwiftVocabulary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SOSwiftVocabulary/Pods-SOSwiftVocabulary.debug.xcconfig"; sourceTree = "<group>"; };
 		E137CAE61F7012DB00CB175C /* SOSwiftVocabulary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SOSwiftVocabulary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E137CAE91F7012DB00CB175C /* SOSwiftVocabulary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SOSwiftVocabulary.h; sourceTree = "<group>"; };
 		E137CAEA1F7012DB00CB175C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -343,11 +337,9 @@
 		E15286DC1FA7CEE500A473A9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E1659C971FE9B98A00ADEAD7 /* LinuxMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
 		E1659C9A1FE9BA1200ADEAD7 /* ThingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingTests.swift; sourceTree = "<group>"; };
-		E16CE8142B936E045C759FF5 /* Pods-SOSwiftVocabularyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOSwiftVocabularyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SOSwiftVocabularyTests/Pods-SOSwiftVocabularyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E1EA1D5A1FDD770700DABEA9 /* SOSwiftVocabulary.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SOSwiftVocabulary.podspec; sourceTree = "<group>"; };
 		E1EA1D5B1FDD770700DABEA9 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		E1EA1D5C1FDD770800DABEA9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		FD866748A0BFDB6EC1F2E7AF /* Pods-SOSwiftVocabularyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOSwiftVocabularyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SOSwiftVocabularyTests/Pods-SOSwiftVocabularyTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -355,7 +347,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF7BE5B1191BADB53F256295 /* Pods_SOSwiftVocabulary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,33 +355,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E137CAF01F7012DB00CB175C /* SOSwiftVocabulary.framework in Frameworks */,
-				F4682F296E507DF79C369F80 /* Pods_SOSwiftVocabularyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3D6F23A14365AD4B77DA710D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C8626E461C41FCB64C1D4D71 /* Pods-SOSwiftVocabulary.debug.xcconfig */,
-				5331187105951F13518DD808 /* Pods-SOSwiftVocabulary.release.xcconfig */,
-				E16CE8142B936E045C759FF5 /* Pods-SOSwiftVocabularyTests.debug.xcconfig */,
-				FD866748A0BFDB6EC1F2E7AF /* Pods-SOSwiftVocabularyTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		7486BC6E71B242DA9D087D56 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				011D47F4109BB279F26065EF /* Pods_SOSwiftVocabulary.framework */,
-				9980A6F2EE7B90EDD6F91F46 /* Pods_SOSwiftVocabularyTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		E137CADC1F7012DB00CB175C = {
 			isa = PBXGroup;
 			children = (
@@ -403,8 +373,6 @@
 				E137CAE81F7012DB00CB175C /* SOSwiftVocabulary */,
 				E137CAF31F7012DB00CB175C /* SOSwiftVocabularyTests */,
 				E137CAE71F7012DB00CB175C /* Products */,
-				3D6F23A14365AD4B77DA710D /* Pods */,
-				7486BC6E71B242DA9D087D56 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -637,12 +605,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E137CAFA1F7012DB00CB175C /* Build configuration list for PBXNativeTarget "SOSwiftVocabulary" */;
 			buildPhases = (
-				10435F10AC0A2FA122FDFE20 /* [CP] Check Pods Manifest.lock */,
 				E137CAE11F7012DB00CB175C /* Sources */,
 				E137CAE21F7012DB00CB175C /* Frameworks */,
 				E137CAE31F7012DB00CB175C /* Headers */,
 				E137CAE41F7012DB00CB175C /* Resources */,
-				42C39897564B961EE95B64F3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -657,12 +623,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E137CAFD1F7012DB00CB175C /* Build configuration list for PBXNativeTarget "SOSwiftVocabularyTests" */;
 			buildPhases = (
-				C293963BC6808F1765B8FCFE /* [CP] Check Pods Manifest.lock */,
 				E137CAEB1F7012DB00CB175C /* Sources */,
 				E137CAEC1F7012DB00CB175C /* Frameworks */,
 				E137CAED1F7012DB00CB175C /* Resources */,
-				94231A5AB7FFE5E534762133 /* [CP] Embed Pods Frameworks */,
-				6E3A4BD918FEED8B43A751A2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -729,90 +692,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		10435F10AC0A2FA122FDFE20 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SOSwiftVocabulary-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		42C39897564B961EE95B64F3 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SOSwiftVocabulary/Pods-SOSwiftVocabulary-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6E3A4BD918FEED8B43A751A2 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SOSwiftVocabularyTests/Pods-SOSwiftVocabularyTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		94231A5AB7FFE5E534762133 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SOSwiftVocabularyTests/Pods-SOSwiftVocabularyTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C293963BC6808F1765B8FCFE /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SOSwiftVocabularyTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E137CAE11F7012DB00CB175C /* Sources */ = {
@@ -1043,14 +922,18 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator watchos watchsimulator appletvos appletvsimulator";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 11.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Debug;
 		};
@@ -1097,18 +980,21 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator watchos watchsimulator appletvos appletvsimulator";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TVOS_DEPLOYMENT_TARGET = 11.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Release;
 		};
 		E137CAFB1F7012DB00CB175C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C8626E461C41FCB64C1D4D71 /* Pods-SOSwiftVocabulary.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -1130,7 +1016,6 @@
 		};
 		E137CAFC1F7012DB00CB175C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5331187105951F13518DD808 /* Pods-SOSwiftVocabulary.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -1152,7 +1037,6 @@
 		};
 		E137CAFE1F7012DB00CB175C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E16CE8142B936E045C759FF5 /* Pods-SOSwiftVocabularyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -1169,7 +1053,6 @@
 		};
 		E137CAFF1F7012DB00CB175C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD866748A0BFDB6EC1F2E7AF /* Pods-SOSwiftVocabularyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
