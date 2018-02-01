@@ -1,6 +1,6 @@
 import Foundation
 
 /// CreativeWork, Text
-public protocol CreativeWorkOrText {}
+@objc public protocol CreativeWorkOrText {}
 
-extension String: CreativeWorkOrText {}
+extension NSString: CreativeWorkOrText {}

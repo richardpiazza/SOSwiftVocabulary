@@ -1,8 +1,8 @@
 import Foundation
 
 /// Text, URL
-public protocol URLOrText {}
+@objc public protocol URLOrText {}
 
-extension String: URLOrText {}
+extension NSString: URLOrText {}
 
-extension URL: URLOrText {}
+extension NSURL: URLOrText {}

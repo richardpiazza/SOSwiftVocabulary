@@ -1,4 +1,4 @@
 import Foundation
 
 /// Organization, ProgramMembership
-public protocol OrganizationOrProgramMembership {}
+@objc public protocol OrganizationOrProgramMembership {}

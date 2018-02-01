@@ -1,6 +1,6 @@
 import Foundation
 
 /// AdministrativeArea, GeoShape, Place, Text
-public protocol AreaServed {}
+@objc public protocol AreaServed {}
 
-extension String: AreaServed {}
+extension NSString: AreaServed {}

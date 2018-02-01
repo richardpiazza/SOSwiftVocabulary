@@ -1,6 +1,6 @@
 import Foundation
 
 /// CreativeWork, URL
-public protocol CreativeWorkOrURL {}
+@objc public protocol CreativeWorkOrURL {}
 
-extension URL: CreativeWorkOrURL {}
+extension NSURL: CreativeWorkOrURL {}

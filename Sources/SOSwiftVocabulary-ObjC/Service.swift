@@ -1,11 +1,11 @@
 import Foundation
 
-public protocol ServiceConformance:
+@objc public protocol ServiceConformance:
                     ProductOrService
                 {}
 
 /// A service provided by an organization, e.g. delivery service, print services, etc.
-public protocol Service: Intangible, ServiceConformance {
+@objc public protocol Service: Intangible, ServiceConformance {
     /// The overall rating, based on a collection of reviews or ratings, of the item.
     var aggregateRating: AggregateRating? { get set }
     /// The geographic area where a service or offered item is provided.

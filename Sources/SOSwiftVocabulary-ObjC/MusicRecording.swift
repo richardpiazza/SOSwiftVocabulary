@@ -1,11 +1,11 @@
 import Foundation
 
-public protocol MusicRecordingConformance:
+@objc public protocol MusicRecordingConformance:
                     ItemListOrMusicRecording
                 {}
 
 /// A music recording (track), usually a single song.
-public protocol MusicRecording: CreativeWork, MusicRecordingConformance {
+@objc public protocol MusicRecording: CreativeWork, MusicRecordingConformance {
     /// The artist that performed this album or recording.
     var byArtist: MusicGroup? { get set }
     /// The duration of the item (movie, audio recording, event, etc.) in ISO 8601 date format.

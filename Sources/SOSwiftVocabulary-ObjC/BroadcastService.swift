@@ -1,7 +1,7 @@
 import Foundation
 
 /// A delivery service through which content is provided via broadcast over the air or online.
-public protocol BroadcastService: Service {
+@objc public protocol BroadcastService: Service {
     /// The media network(s) whose content is broadcast on this station.
     var broadcastAffiliateOf: Organization? { get set }
     /// The name displayed in the channel guide. For many US affiliates, it is the network name.

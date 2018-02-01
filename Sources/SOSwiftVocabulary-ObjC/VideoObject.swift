@@ -1,7 +1,7 @@
 import Foundation
 
 /// A video file.
-public protocol VideoObject: MediaObject {
+@objc public protocol VideoObject: MediaObject {
     /// An actor, e.g. in tv, radio, movie, video games etc., or in an event. Actors can be associated with individual items or with a series, episode, clip.
     /// - schema.org property name: actor
     var actors: [Person]? { get set }

@@ -1,8 +1,8 @@
 import Foundation
 
 /// DateTime, Text, URL
-public protocol DateTimeOrURLOrText {}
+@objc public protocol DateTimeOrURLOrText {}
 
-extension String: DateTimeOrURLOrText {}
+extension NSString: DateTimeOrURLOrText {}
 
-extension URL: DateTimeOrURLOrText {}
+extension NSURL: DateTimeOrURLOrText {}

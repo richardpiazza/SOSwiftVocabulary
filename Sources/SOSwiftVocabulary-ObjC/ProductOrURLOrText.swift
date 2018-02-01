@@ -1,8 +1,8 @@
 import Foundation
 
 /// Product, Text, URL
-public protocol ProductOrURLOrText {}
+@objc public protocol ProductOrURLOrText {}
 
-extension String: ProductOrURLOrText {}
+extension NSString: ProductOrURLOrText {}
 
-extension URL: ProductOrURLOrText {}
+extension NSURL: ProductOrURLOrText {}

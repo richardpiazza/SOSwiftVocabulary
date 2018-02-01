@@ -1,6 +1,6 @@
 import Foundation
 
 /// Map, URL
-public protocol MapOrURL {}
+@objc public protocol MapOrURL {}
 
-extension URL: MapOrURL {}
+extension NSURL: MapOrURL {}

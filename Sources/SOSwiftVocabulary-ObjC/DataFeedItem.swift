@@ -1,11 +1,11 @@
 import Foundation
 
-public protocol DataFeedItemConformance:
+@objc public protocol DataFeedItemConformance:
                     DataFeedItemOrThingOrText
                 {}
 
 /// A single item within a larger data feed.
-public protocol DataFeedItem: Intangible, DataFeedItemConformance {
+@objc public protocol DataFeedItem: Intangible, DataFeedItemConformance {
     /// The date on which the CreativeWork was created or the item was added to a DataFeed.
     var dateCreated: DateOnlyOrDateTime? { get set }
     /// The datetime the item was removed from the DataFeed.

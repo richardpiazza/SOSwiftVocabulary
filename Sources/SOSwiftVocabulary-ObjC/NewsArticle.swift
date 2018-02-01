@@ -1,7 +1,7 @@
 import Foundation
 
 /// A news article.
-public protocol NewsArticle: Article {
+@objc public protocol NewsArticle: Article {
     /// The location where the NewsArticle was produced.
     var dateline: String? { get set }
     /// The number of the column in which the NewsArticle appears in the print edition.

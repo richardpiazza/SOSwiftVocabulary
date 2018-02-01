@@ -1,17 +1,17 @@
 import Foundation
 
-public protocol ContactPointConformance:
+@objc public protocol ContactPointConformance:
                     ContactPointOrPlace
                 {}
 
 /// A contact point—for example, a Customer Complaints department.
-public protocol ContactPoint: StructuredValue, ContactPointConformance {
+@objc public protocol ContactPoint: StructuredValue, ContactPointConformance {
     /// The geographic area where a service or offered item is provided.
     var areaServed: AreaServed? { get set }
     /// A language someone may use with the item. Please use one of the language codes from the IETF BCP 47 standard.
     var availableLanguage: LanguageOrText? { get set }
     /// An option available on this contact point (e.g. a toll-free number or support for hearing-impaired callers).
-    var contactOption: ContactPointOption? { get set }
+    var contactOptionRawValue: NSNumber? { get set }
     /// A person or organization can have different contact points, for different purposes. For example, a sales contact point, a PR contact point and so on. This property is used to specify the kind of contact point.
     var contactType: String? { get set }
     /// Email address.
@@ -24,4 +24,24 @@ public protocol ContactPoint: StructuredValue, ContactPointConformance {
     var productSupported: ProductOrText? { get set }
     /// The telephone number.
     var telephone: String? { get set }
+}
+
+public extension ContactPoint {
+    var contactOption: ContactPointOption? {
+        get {
+            guard let rawValue = contactOptionRawValue?.intValue else {
+                return nil
+            }
+            
+            return ContactPointOption(rawValue: rawValue)
+        }
+        set {
+            guard let rawValue = newValue?.rawValue else {
+                contactOptionRawValue = nil
+                return
+            }
+            
+            contactOptionRawValue = NSNumber(value: rawValue)
+        }
+    }
 }

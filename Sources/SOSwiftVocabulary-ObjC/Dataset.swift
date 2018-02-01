@@ -1,7 +1,7 @@
 import Foundation
 
 /// A body of structured information describing some topic(s) of interest.
-public protocol Dataset: CreativeWork {
+@objc public protocol Dataset: CreativeWork {
     /// A downloadable form of this dataset, at a specific location, in a specific format.
     var distribution: DataDownload? { get set }
     /// A data catalog which contains this dataset. Supersedes catalog, includedDataCatalog.

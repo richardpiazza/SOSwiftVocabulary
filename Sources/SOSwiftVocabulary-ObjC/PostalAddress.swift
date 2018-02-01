@@ -1,12 +1,12 @@
 import Foundation
 
-public protocol PostalAddressConformance:
+@objc public protocol PostalAddressConformance:
                     PostalAddressOrText,
                     PlaceOrPostalAddressOrText
                 {}
 
 /// The mailing address.
-public protocol PostalAddress: ContactPoint, PostalAddressConformance {
+@objc public protocol PostalAddress: ContactPoint, PostalAddressConformance {
     /// The country. For example, USA. You can also provide the two-letter ISO 3166-1 alpha-2 country code.
     var addressCountry: CountryOrText? { get set }
     /// The locality. For example, Mountain View.

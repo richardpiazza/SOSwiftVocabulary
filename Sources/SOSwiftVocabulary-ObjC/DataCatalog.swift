@@ -1,7 +1,7 @@
 import Foundation
 
 /// A collection of datasets.
-public protocol DataCatalog: CreativeWork {
+@objc public protocol DataCatalog: CreativeWork {
     /// A dataset contained in this catalog.
     /// - Inverse property: includedInDataCatalog.
     var dataset: Dataset? { get set }

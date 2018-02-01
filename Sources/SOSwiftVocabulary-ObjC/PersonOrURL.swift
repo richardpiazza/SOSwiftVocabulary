@@ -1,6 +1,6 @@
 import Foundation
 
 /// Person, URL
-public protocol PersonOrURL {}
+@objc public protocol PersonOrURL {}
 
-extension URL: PersonOrURL {}
+extension NSURL: PersonOrURL {}

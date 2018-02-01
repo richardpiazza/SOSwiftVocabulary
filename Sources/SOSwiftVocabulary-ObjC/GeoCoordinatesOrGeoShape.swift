@@ -1,4 +1,4 @@
 import Foundation
 
 /// GeoCoordinates, GeoShape
-public protocol GeoCoordinatesOrGeoShape {}
+@objc public protocol GeoCoordinatesOrGeoShape {}

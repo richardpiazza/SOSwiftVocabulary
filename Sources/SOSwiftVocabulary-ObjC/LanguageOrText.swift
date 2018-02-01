@@ -1,6 +1,6 @@
 import Foundation
 
 /// Language, Text
-public protocol LanguageOrText {}
+@objc public protocol LanguageOrText {}
 
-extension String: LanguageOrText {}
+extension NSString: LanguageOrText {}

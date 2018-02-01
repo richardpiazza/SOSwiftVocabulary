@@ -1,6 +1,6 @@
 import Foundation
 
 /// ListItem, Text, Thing
-public protocol ListItemOrThingOrText {}
+@objc public protocol ListItemOrThingOrText {}
 
-extension String: ListItemOrThingOrText {}
+extension NSString: ListItemOrThingOrText {}

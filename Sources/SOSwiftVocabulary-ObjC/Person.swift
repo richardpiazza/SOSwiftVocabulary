@@ -1,13 +1,13 @@
 import Foundation
 
-public protocol PersonConformance:
+@objc public protocol PersonConformance:
                     PersonOrURL,
                     OrganizationOrPerson,
                     MusicGroupOrPerson
                 {}
 
 /// A person (alive, dead, undead, or fictional).
-public protocol Person: Thing, PersonConformance {
+@objc public protocol Person: Thing, PersonConformance {
     /// An additional name for a Person, can be used for a middle name.
     var additionalName: String? { get set }
     /// Physical address of the item.

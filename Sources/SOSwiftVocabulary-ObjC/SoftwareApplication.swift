@@ -1,11 +1,11 @@
 import Foundation
 
-public protocol SoftwareApplicationConformance:
+@objc public protocol SoftwareApplicationConformance:
                     SoftwareApplicationOrWebsite
                 {}
 
 /// A software application.
-public protocol SoftwareApplication: CreativeWork, SoftwareApplicationConformance {
+@objc public protocol SoftwareApplication: CreativeWork, SoftwareApplicationConformance {
     /// Type of software application, e.g. 'Game, Multimedia'.
     var applicationCategory: URLOrText? { get set }
     /// Subcategory of the application, e.g. 'Arcade Game'.

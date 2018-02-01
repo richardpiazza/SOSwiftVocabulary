@@ -1,4 +1,4 @@
 import Foundation
 
 /// MonetaryAmount, PriceSpecification
-public protocol MonetaryAmountOrPriceSpecification {}
+@objc public protocol MonetaryAmountOrPriceSpecification {}

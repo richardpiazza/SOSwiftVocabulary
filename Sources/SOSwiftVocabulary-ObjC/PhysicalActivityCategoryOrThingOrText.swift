@@ -1,6 +1,8 @@
 import Foundation
 
 /// PhysicalActivityCategory, Thing, Text
-public protocol PhysicalActivityCategoryOrThingOrText {}
+@objc public protocol PhysicalActivityCategoryOrThingOrText {}
 
-extension String: PhysicalActivityCategoryOrThingOrText {}
+extension NSString: PhysicalActivityCategoryOrThingOrText {}
+
+extension NSNumber: PhysicalActivityCategoryOrThingOrText {}

@@ -1,7 +1,7 @@
 import Foundation
 
 /// A review of an item - for example, of a restaurant, movie, or store.
-public protocol Review: CreativeWork {
+@objc public protocol Review: CreativeWork {
     /// The item that is being reviewed/rated.
     var itemReviewed: Thing? { get set }
     /// This Review or Rating is relevant to this part or facet of the itemReviewed.

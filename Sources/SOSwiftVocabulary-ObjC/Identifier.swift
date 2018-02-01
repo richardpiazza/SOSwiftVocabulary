@@ -1,8 +1,8 @@
 import Foundation
 
 /// PropertyValue, Text, URL
-public protocol Identifier {}
+@objc public protocol Identifier {}
 
-extension String: Identifier {}
+extension NSString: Identifier {}
 
-extension URL: Identifier {}
+extension NSURL: Identifier {}

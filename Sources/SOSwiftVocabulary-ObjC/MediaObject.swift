@@ -2,7 +2,7 @@ import Foundation
 
 /// A media object, such as an image, video, or audio object embedded in a web page or a downloadable dataset i.e. DataDownload.
 /// - note: that a creative work may have many media objects associated with it on the same web page. For example, a page about a single song (MusicRecording) may have a music video (VideoObject), and a high and low bandwidth audio stream (2 AudioObject's).
-public protocol MediaObject: CreativeWork {
+@objc public protocol MediaObject: CreativeWork {
     /// A NewsArticle associated with the Media Object.
     var associatedArticle: NewsArticle? { get set }
     /// The bitrate of the media object.
@@ -30,9 +30,29 @@ public protocol MediaObject: CreativeWork {
     /// The regions where the media is allowed. If not specified, then it's assumed to be allowed everywhere. Specify the countries in ISO 3166 format.
     var regionsAllowed: Place? { get set }
     /// Indicates if use of the media require a subscription (either paid or free).
-    var requiresSubscription: Bool? { get set }
+    var requiresSubscriptionRawValue: NSNumber? { get set }
     /// Date when this media object was uploaded to this site.
     var uploadDate: DateOnly? { get set }
     /// The width of the item.
     var width: DistanceOrQuantitativeValue? { get set }
+}
+
+public extension MediaObject {
+    var requiresSubscription: Bool? {
+        get {
+            guard let rawValue = requiresSubscriptionRawValue?.boolValue else {
+                return nil
+            }
+            
+            return rawValue
+        }
+        set {
+            guard let rawValue = newValue else {
+                requiresSubscriptionRawValue = nil
+                return
+            }
+            
+            requiresSubscriptionRawValue = NSNumber(booleanLiteral: rawValue)
+        }
+    }
 }

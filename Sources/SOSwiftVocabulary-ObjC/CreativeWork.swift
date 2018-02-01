@@ -1,6 +1,6 @@
 import Foundation
 
-public protocol CreativeWorkConformance:
+@objc public protocol CreativeWorkConformance:
                     CreativeWorkOrEvent,
                     CreativeWorkOrURL,
                     CreativeWorkOrText,
@@ -8,22 +8,22 @@ public protocol CreativeWorkConformance:
                 {}
 
 /// The most generic kind of creative work, including books, movies, photographs, software programs, etc.
-public protocol CreativeWork: Thing, CreativeWorkConformance {
+@objc public protocol CreativeWork: Thing, CreativeWorkConformance {
     /// The subject matter of the content.
     var about: Thing? { get set }
     /// The human sensory perceptual system or cognitive faculty through which a person may process or perceive information.
-    var accessMode: AccessMode? { get set }
+    var accessModeRawValue: NSNumber? { get set }
     /// A list of single or combined accessModes that are sufficient to understand all the intellectual content of a resource.
     /// - schema.org property name: accessModeSufficient
-    var accessModeSufficients: [AccessModeSufficient]? { get set }
+    var accessModeSufficientsRawValue: [NSNumber]? { get set }
     /// Indicates that the resource is compatible with the referenced accessibility API
-    var accessibilityAPI: AccessibilityAPI? { get set }
+    var accessibilityAPIRawValue: NSNumber? { get set }
     /// Identifies input methods that are sufficient to fully control the described resource
-    var accessibilityControl: AccessibilityControl? { get set }
+    var accessibilityControlRawValue: NSNumber? { get set }
     /// Content features of the resource, such as accessible media, alternatives and supported enhancements for accessibility
-    var accessibilityFeature: AccessibilityFeature? { get set }
+    var accessibilityFeatureRawValue: NSNumber? { get set }
     /// A characteristic of the described resource that is physiologically dangerous to some users.
-    var accessibilityHazard: AccessibilityHazard? { get set }
+    var accessibilityHazardRawValue: NSNumber? { get set }
     /// A human-readable summary of specific accessibility features or deficiencies, consistent with the other accessibility metadata but expressing subtleties such as "short descriptions are present but long descriptions will be needed for non-visual users" or "short descriptions are present and no long descriptions are needed."
     var accessibilitySummary: String? { get set }
     /// Specifies the Person that is legally accountable for the CreativeWork.
@@ -50,7 +50,7 @@ public protocol CreativeWork: Thing, CreativeWorkConformance {
     /// Comments, typically from users.
     var comment: Comment? { get set }
     /// The number of comments this CreativeWork (e.g. Article, Question or Answer) has received. This is most applicable to works published in Web sites with commenting system; additional comments may exist elsewhere.
-    var commentCount: Int? { get set }
+    var commentCountRawValue: NSNumber? { get set }
     /// The location depicted or described in the content. For example, the location in a photograph or painting.
     var contentLocation: Place? { get set }
     /// Official rating of a piece of content—for example,'MPAA PG-13'.
@@ -62,7 +62,7 @@ public protocol CreativeWork: Thing, CreativeWorkConformance {
     /// The party holding the legal copyright to the CreativeWork.
     var copyrightHolder: OrganizationOrPerson? { get set }
     /// The year during which the claimed copyright for the CreativeWork was first asserted.
-    var copyrightYear: Int? { get set }
+    var copyrightYearRawValue: NSNumber? { get set }
     /// The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork.
     var creator: OrganizationOrPerson? { get set }
     /// The date on which the CreativeWork was created or the item was added to a DataFeed.
@@ -99,14 +99,14 @@ public protocol CreativeWork: Thing, CreativeWorkConformance {
     /// The number of interactions for the CreativeWork using the WebSite or SoftwareApplication. The most specific child type of InteractionCounter should be used.
     var interactionStatistic: InteractionCounter?  { get set }
     /// The predominant mode of learning supported by the learning resource. Acceptable values are 'active', 'expositive', or 'mixed'.
-    var interactivityType: Interactivity?  { get set }
+    var interactivityTypeRawValue: NSNumber?  { get set }
     /// A flag to signal that the publication is accessible for free.
-    var isAccessibleForFree: Bool?  { get set }
+    var isAccessibleForFreeRawValue: NSNumber?  { get set }
     /// A resource that was used in the creation of this resource. This term can be repeated for multiple sources.
     /// - schema.org property name: isBasedOn
     var basedOn: CreativeWorkOrProductOrURL?  { get set }
     /// Indicates whether this content is family friendly.
-    var isFamilyFriendly: Bool?  { get set }
+    var isFamilyFriendlyRawValue: NSNumber?  { get set }
     /// Indicates a CreativeWork that this CreativeWork is (in some sense) part of. Inverse property: hasPart.
     /// - schema.org property name: isPartOf
     var partOf: CreativeWork?  { get set }
@@ -183,3 +183,214 @@ public protocol CreativeWork: Thing, CreativeWorkConformance {
     var workTranslation: CreativeWork? { get set }
 }
 
+public extension CreativeWork {
+    var accessMode: AccessMode? {
+        get {
+            guard let rawValue = accessModeRawValue?.intValue else {
+                return nil
+            }
+            
+            return AccessMode(rawValue: rawValue)
+        }
+        set {
+            guard let rawValue = newValue?.rawValue else {
+                accessModeRawValue = nil
+                return
+            }
+            
+            accessModeRawValue = NSNumber(value: rawValue)
+        }
+    }
+    
+    var accessModeSufficients: [AccessModeSufficient]? {
+        get {
+            guard let rawValues = accessModeSufficientsRawValue else {
+                return nil
+            }
+            
+            var accessModes = [AccessModeSufficient]()
+            for rawValue in rawValues {
+                if let am = AccessModeSufficient(rawValue: rawValue.intValue) {
+                    accessModes.append(am)
+                }
+            }
+            
+            return accessModes
+        }
+        set {
+            guard let rawValue = newValue else {
+                accessModeSufficientsRawValue = nil
+                return
+            }
+            
+            var rawValues = [NSNumber]()
+            for value in rawValue {
+                rawValues.append(NSNumber(value: value.rawValue))
+            }
+            
+            accessModeSufficientsRawValue = rawValues
+        }
+    }
+    
+    var accessibilityAPI: AccessibilityAPI? {
+        get {
+            guard let rawValue = accessibilityAPIRawValue?.intValue else {
+                return nil
+            }
+            
+            return AccessibilityAPI(rawValue: rawValue)
+        }
+        set {
+            guard let rawValue = newValue?.rawValue else {
+                accessibilityAPIRawValue = nil
+                return
+            }
+            
+            accessibilityAPIRawValue = NSNumber(value: rawValue)
+        }
+    }
+    
+    var accessibilityControl: AccessibilityControl? {
+        get {
+            guard let rawValue = accessibilityControlRawValue?.intValue else {
+                return nil
+            }
+            
+            return AccessibilityControl(rawValue: rawValue)
+        }
+        set {
+            guard let rawValue = newValue?.rawValue else {
+                accessibilityControlRawValue = nil
+                return
+            }
+            
+            accessibilityControlRawValue = NSNumber(value: rawValue)
+        }
+    }
+    
+    var accessibilityFeature: AccessibilityFeature? {
+        get {
+            guard let rawValue = accessibilityFeatureRawValue?.intValue else {
+                return nil
+            }
+            
+            return AccessibilityFeature(rawValue: rawValue)
+        }
+        set {
+            guard let rawValue = newValue?.rawValue else {
+                accessibilityFeatureRawValue = nil
+                return
+            }
+            
+            accessibilityFeatureRawValue = NSNumber(value: rawValue)
+        }
+    }
+    
+    var accessibilityHazard: AccessibilityHazard? {
+        get {
+            guard let rawValue = accessibilityHazardRawValue?.intValue else {
+                return nil
+            }
+            
+            return AccessibilityHazard(rawValue: rawValue)
+        }
+        set {
+            guard let rawValue = newValue?.rawValue else {
+                accessibilityHazardRawValue = nil
+                return
+            }
+            
+            accessibilityHazardRawValue = NSNumber(value: rawValue)
+        }
+    }
+    
+    var commentCount: Int? {
+        get {
+            guard let rawValue = commentCountRawValue?.intValue else {
+                return nil
+            }
+            
+            return rawValue
+        }
+        set {
+            guard let rawValue = newValue else {
+                commentCountRawValue = nil
+                return
+            }
+            
+            commentCountRawValue = NSNumber(value: rawValue)
+        }
+    }
+    
+    var copyrightYear: Int? {
+        get {
+            guard let rawValue = copyrightYearRawValue?.intValue else {
+                return nil
+            }
+            
+            return rawValue
+        }
+        set {
+            guard let rawValue = newValue else {
+                copyrightYearRawValue = nil
+                return
+            }
+            
+            copyrightYearRawValue = NSNumber(value: rawValue)
+        }
+    }
+    
+    var interactivityType: Interactivity? {
+        get {
+            guard let rawValue = interactivityTypeRawValue?.intValue else {
+                return nil
+            }
+            
+            return Interactivity(rawValue: rawValue)
+        }
+        set {
+            guard let rawValue = newValue?.rawValue else {
+                interactivityTypeRawValue = nil
+                return
+            }
+            
+            interactivityTypeRawValue = NSNumber(value: rawValue)
+        }
+    }
+    
+    var isAccessibleForFree: Bool? {
+        get {
+            guard let rawValue = isAccessibleForFreeRawValue?.boolValue else {
+                return nil
+            }
+            
+            return rawValue
+        }
+        set {
+            guard let rawValue = newValue else {
+                isAccessibleForFreeRawValue = nil
+                return
+            }
+            
+            isAccessibleForFreeRawValue = NSNumber(value: rawValue)
+        }
+    }
+    
+    var isFamilyFriendly: Bool? {
+        get {
+            guard let rawValue = isFamilyFriendlyRawValue?.boolValue else {
+                return nil
+            }
+            
+            return rawValue
+        }
+        set {
+            guard let rawValue = newValue else {
+                isFamilyFriendlyRawValue = nil
+                return
+            }
+            
+            isFamilyFriendlyRawValue = NSNumber(value: rawValue)
+        }
+    }
+}

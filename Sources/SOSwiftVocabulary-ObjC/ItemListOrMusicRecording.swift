@@ -1,3 +1,3 @@
 import Foundation
 
-public protocol ItemListOrMusicRecording {}
+@objc public protocol ItemListOrMusicRecording {}

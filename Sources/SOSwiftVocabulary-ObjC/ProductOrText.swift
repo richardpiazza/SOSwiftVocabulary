@@ -1,6 +1,6 @@
 import Foundation
 
 /// Product, Text
-public protocol ProductOrText{}
+@objc public protocol ProductOrText{}
 
-extension String: ProductOrText {}
+extension NSString: ProductOrText {}

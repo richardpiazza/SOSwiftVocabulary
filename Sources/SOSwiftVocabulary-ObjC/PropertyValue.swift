@@ -1,6 +1,6 @@
 import Foundation
 
-public protocol PropertyValueConformance:
+@objc public protocol PropertyValueConformance:
                     Identifier,
                     PropertyValueOrText
                 {}
@@ -8,7 +8,7 @@ public protocol PropertyValueConformance:
 /// A property-value pair, e.g. representing a feature of a product or place.
 /// Use the `name` property for the name of the property. If there is an additional human-readable version of the value, put that into the `description` property.
 /// Always use specific schema.org properties when a) they exist and b) you can populate them. Using PropertyValue as a substitute will typically not trigger the same effect as using the original, specific property.
-public protocol PropertyValue: StructuredValue, PropertyValueConformance {
+@objc public protocol PropertyValue: StructuredValue, PropertyValueConformance {
     /// The upper value of some characteristic or property.
     var maxValue: Number? { get set }
     /// A technique or technology used in a Dataset (or DataDownload, DataCatalog), corresponding to the method used for measuring the corresponding variable(s) (described using variableMeasured). This is oriented towards scientific and scholarly dataset publication but may have broader applicability; it is not intended as a full representation of measurement, but rather as a high level summary for dataset discovery.

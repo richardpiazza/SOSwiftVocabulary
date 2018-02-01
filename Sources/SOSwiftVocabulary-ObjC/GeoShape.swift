@@ -1,6 +1,6 @@
 import Foundation
 
-public protocol GeoShapeConformance:
+@objc public protocol GeoShapeConformance:
                     GeoCoordinatesOrGeoShape,
                     GeoShapeOrPlaceOrText,
                     AreaServed {}
@@ -8,7 +8,7 @@ public protocol GeoShapeConformance:
 /// The geographic shape of a place.
 /// A GeoShape can be described using several properties whose values are based on latitude/longitude pairs.
 /// Either whitespace or commas can be used to separate latitude and longitude; whitespace should be used when writing a list of several such points.
-public protocol GeoShape: Thing, GeoShapeConformance {
+@objc public protocol GeoShape: Thing, GeoShapeConformance {
     /// Physical address of the item.
     var address: PostalAddressOrText? { get set }
     /// The country. For example, USA. You can also provide the two-letter ISO 3166-1 alpha-2 country code.

@@ -1,4 +1,4 @@
 import Foundation
 
 /// Product, Service
-public protocol ProductOrService {}
+@objc public protocol ProductOrService {}

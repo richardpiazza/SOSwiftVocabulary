@@ -1,6 +1,6 @@
 import Foundation
 
-public protocol ProductConformance:
+@objc public protocol ProductConformance:
                     CreativeWorkOrProductOrURL,
                     ProductOrURLOrText,
                     ProductOrService,
@@ -10,7 +10,7 @@ public protocol ProductConformance:
 
 /// Any offered product or service.
 /// - For Example: a pair of shoes; a concert ticket; the rental of a car; a haircut; or an episode of a TV show streamed online.
-public protocol Product: Thing, ProductConformance {
+@objc public protocol Product: Thing, ProductConformance {
     /// A property-value pair representing an additional characteristics of the entitity, e.g. a product feature or another characteristic for which there is no matching property in schema.org.
     /// - note: Publishers should be aware that applications designed to use specific schema.org properties (e.g. http://schema.org/width, http://schema.org/color, http://schema.org/gtin13, ...) will typically expect such data to be provided using those properties, rather than using the generic property/value mechanism.
     var additionalProperty: PropertyValue? { get set }
@@ -53,7 +53,7 @@ public protocol Product: Thing, ProductConformance {
     /// - schema.org property name: isSimilarTo
     var similarTo: [ProductOrService]? { get set }
     /// A predefined value from OfferItemCondition or a textual description of the condition of the product or service, or the products or services included in the offer.
-    var itemCondition: OfferItemCondition? { get set }
+    var itemConditionRawValue: NSNumber? { get set }
     /// An associated logo.
     var logo: ImageObjectOrURL? { get set }
     /// The manufacturer of the product.
@@ -83,4 +83,24 @@ public protocol Product: Thing, ProductConformance {
     var weight: QuantitativeValue? { get set }
     /// The width of the item.
     var width: DistanceOrQuantitativeValue? { get set }
+}
+
+public extension Product {
+    var itemCondition: OfferItemCondition? {
+        get {
+            guard let rawValue = itemConditionRawValue?.intValue else {
+                return nil
+            }
+            
+            return OfferItemCondition(rawValue: rawValue)
+        }
+        set {
+            guard let rawValue = newValue?.rawValue else {
+                itemConditionRawValue = nil
+                return
+            }
+            
+            itemConditionRawValue = NSNumber(value: rawValue)
+        }
+    }
 }

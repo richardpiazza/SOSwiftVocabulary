@@ -1,11 +1,11 @@
 import Foundation
 
-public protocol MusicGroupConformance:
+@objc public protocol MusicGroupConformance:
                     MusicGroupOrPerson
                 {}
 
 /// A musical group, such as a band, an orchestra, or a choir. Can also be a solo musician.
-public protocol MusicGroup: PerformingGroup, MusicGroupConformance {
+@objc public protocol MusicGroup: PerformingGroup, MusicGroupConformance {
     /// A music album.
     var album: [MusicAlbum]? { get set }
     /// Genre of the creative work, broadcast channel or group.

@@ -1,6 +1,6 @@
 import Foundation
 
 /// Text, Thing
-public protocol ThingOrText {}
+@objc public protocol ThingOrText {}
 
-extension String: ThingOrText {}
+extension NSString: ThingOrText {}

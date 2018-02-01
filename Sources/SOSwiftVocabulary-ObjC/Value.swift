@@ -1,8 +1,8 @@
 import Foundation
 
 /// Boolean, Number, StructuredValue, Text
-public protocol Value {}
+@objc public protocol Value {}
 
-extension Bool: Value {}
+extension NSNumber: Value {}
 
-extension String: Value {}
+extension NSString: Value {}

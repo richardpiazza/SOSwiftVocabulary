@@ -1,6 +1,8 @@
 import Foundation
 
 /// ItemListOrder, Text
-public protocol ItemListOrderOrText {}
+@objc public protocol ItemListOrderOrText {}
 
-extension String: ItemListOrderOrText {}
+extension NSString: ItemListOrderOrText {}
+
+extension NSNumber: ItemListOrderOrText {}

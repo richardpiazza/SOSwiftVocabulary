@@ -1,13 +1,13 @@
 import Foundation
 
-public protocol EventConformance:
+@objc public protocol EventConformance:
                     CreativeWorkOrEvent
                 {}
 
 /// An event happening at a certain time and location, such as a concert, lecture, or festival.
 /// Ticketing information may be added via the offers property.
 /// Repeated events may be structured as separate Event objects.
-public protocol Event: Thing, EventConformance {
+@objc public protocol Event: Thing, EventConformance {
     /// The subject matter of the content.
     var about: Thing? { get set }
     /// An actor, e.g. in tv, radio, movie, video games etc., or in an event. Actors can be associated with individual items or with a series, episode, clip.
@@ -34,17 +34,17 @@ public protocol Event: Thing, EventConformance {
     /// The end date and time of the item (in ISO 8601 date format).
     var endDate: DateOnlyOrDateTime? { get set }
     /// An eventStatus of an event represents its status; particularly useful when an event is cancelled or rescheduled.
-    var eventStatus: EventStatus? { get set }
+    var eventStatusRawValue: NSNumber? { get set }
     /// A person or organization that supports (sponsors) something through some kind of financial contribution.
     var funder: OrganizationOrPerson? { get set }
     /// The language of the content or performance or used in an action. Please use one of the language codes from the IETF BCP 47 standard. See also availableLanguage.
     var inLanguage: LanguageOrText? { get set }
     /// A flag to signal that the publication is accessible for free.
-    var isAccessibleForFree: Bool? { get set }
+    var isAccessibleForFreeRawValue: NSNumber? { get set }
     /// The location of for example where the event is happening, an organization is located, or where an action takes place.
     var location: PlaceOrPostalAddressOrText? { get set }
     /// The total number of individuals that may attend an event or venue.
-    var maximumAttendeeCapacity: Int? { get set }
+    var maximumAttendeeCapacityRawValue: NSNumber? { get set }
     /// An offer to provide this item—for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event.
     var offers: [Offer]? { get set }
     /// An organizer of an Event.
@@ -58,7 +58,7 @@ public protocol Event: Thing, EventConformance {
     /// Inverse property: recordedAt.
     var recordedIn: CreativeWork? { get set }
     /// The number of attendee places for an event that remain unallocated.
-    var remainingAttendeeCapacity: Int? { get set }
+    var remainingAttendeeCapacityRawValue: NSNumber? { get set }
     /// A review of the item.
     /// - schema.org property name: review
     var reviews: [Review]? { get set }
@@ -81,4 +81,78 @@ public protocol Event: Thing, EventConformance {
     var workFeatured: CreativeWork? { get set }
     /// A work performed in some event, for example a play performed in a TheaterEvent.
     var workPerformed: CreativeWork? { get set }
+}
+
+public extension Event {
+    var eventStatus: EventStatus? {
+        get {
+            guard let rawValue = eventStatusRawValue?.intValue else {
+                return nil
+            }
+            
+            return EventStatus(rawValue: rawValue)
+        }
+        set {
+            guard let rawValue = newValue?.rawValue else {
+                eventStatusRawValue = nil
+                return
+            }
+            
+            eventStatusRawValue = NSNumber(value: rawValue)
+        }
+    }
+    
+    var isAccessibleForFree: Bool? {
+        get {
+            guard let rawValue = isAccessibleForFreeRawValue?.boolValue else {
+                return nil
+            }
+            
+            return rawValue
+        }
+        set {
+            guard let rawValue = newValue else {
+                isAccessibleForFreeRawValue = nil
+                return
+            }
+            
+            isAccessibleForFreeRawValue = NSNumber(booleanLiteral: rawValue)
+        }
+    }
+    
+    var maximumAttendeeCapacity: Int? {
+        get {
+            guard let rawValue = maximumAttendeeCapacityRawValue?.intValue else {
+                return nil
+            }
+            
+            return rawValue
+        }
+        set {
+            guard let rawValue = newValue else {
+                maximumAttendeeCapacityRawValue = nil
+                return
+            }
+            
+            maximumAttendeeCapacityRawValue = NSNumber(value: rawValue)
+        }
+    }
+    
+    var remainingAttendeeCapacity: Int? {
+        get {
+            guard let rawValue = remainingAttendeeCapacityRawValue?.intValue else {
+                return nil
+            }
+            
+            return rawValue
+        }
+        set {
+            guard let rawValue = newValue else {
+                remainingAttendeeCapacityRawValue = nil
+                return
+            }
+            
+            remainingAttendeeCapacityRawValue = NSNumber(value: rawValue)
+        }
+    }
 }

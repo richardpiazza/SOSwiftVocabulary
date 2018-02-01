@@ -1,4 +1,4 @@
 import Foundation
 
 /// CreativeWork, Event
-public protocol CreativeWorkOrEvent {}
+@objc public protocol CreativeWorkOrEvent {}

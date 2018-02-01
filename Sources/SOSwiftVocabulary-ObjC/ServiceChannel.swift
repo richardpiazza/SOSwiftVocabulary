@@ -1,7 +1,7 @@
 import Foundation
 
 /// A means for accessing a service, e.g. a government office location, web site, or phone number.
-public protocol ServiceChannel: Intangible {
+@objc public protocol ServiceChannel: Intangible {
     /// A language someone may use with the item. Please use one of the language codes from the IETF BCP 47 standard.
     var availableLanguage: LanguageOrText? { get set }
     /// Estimated processing time for the service using this channel.

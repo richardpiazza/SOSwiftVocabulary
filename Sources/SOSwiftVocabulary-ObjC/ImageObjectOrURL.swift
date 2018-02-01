@@ -1,6 +1,6 @@
 import Foundation
 
 /// ImageObject, URL
-public protocol ImageObjectOrURL {}
+@objc public protocol ImageObjectOrURL {}
 
-extension URL: ImageObjectOrURL {}
+extension NSURL: ImageObjectOrURL {}

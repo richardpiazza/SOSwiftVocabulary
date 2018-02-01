@@ -1,6 +1,8 @@
 import Foundation
 
 /// Gender, Text
-public protocol GenderOrText {}
+@objc public protocol GenderOrText {}
 
-extension String: GenderOrText {}
+extension NSString: GenderOrText {}
+
+extension NSNumber: GenderOrText {}

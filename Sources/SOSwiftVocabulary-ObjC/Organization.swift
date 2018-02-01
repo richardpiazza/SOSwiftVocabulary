@@ -1,6 +1,6 @@
 import Foundation
 
-public protocol OrganizationConformance:
+@objc public protocol OrganizationConformance:
                     EducationalOrganizationOrOrganization,
                     BrandOrOrganization,
                     OrganizationOrPerson,
@@ -8,7 +8,7 @@ public protocol OrganizationConformance:
                 {}
 
 /// An organization such as a school, NGO, corporation, club, etc.
-public protocol Organization: Thing, OrganizationConformance {
+@objc public protocol Organization: Thing, OrganizationConformance {
     /// For a NewsMediaOrganization or other news-related Organization, a statement about public engagement activities (for news media, the newsroom’s), including involving the public - digitally or otherwise -- in coverage decisions, reporting and activities after publication.
     var actionableFeedbackPolicy: CreativeWorkOrURL? { get set }
     /// Physical address of the item.

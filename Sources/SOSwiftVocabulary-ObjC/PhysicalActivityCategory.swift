@@ -1,6 +1,6 @@
 import Foundation
 
-fileprivate enum _PhysicalActivityCategory: String, PhysicalActivityCategoryOrThingOrText {
+fileprivate enum _PhysicalActivityCategory: String {
     case aerobic = "AerobicActivity"
     case anaerobic = "AnaerobicActivity"
     case balance = "Balance"
@@ -11,7 +11,7 @@ fileprivate enum _PhysicalActivityCategory: String, PhysicalActivityCategoryOrTh
 }
 
 /// Categories of physical activity, organized by physiologic classification.
-@objc public enum PhysicalActivityCategory: Int, PhysicalActivityCategoryOrThingOrText {
+@objc public enum PhysicalActivityCategory: Int {
     case aerobic
     case anaerobic
     case balance

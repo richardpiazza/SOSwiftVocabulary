@@ -1,6 +1,6 @@
 import Foundation
 
 /// AlignmentObject, Course, Text
-public protocol AlignmentObjectOrCourseOrText {}
+@objc public protocol AlignmentObjectOrCourseOrText {}
 
-extension String: AlignmentObjectOrCourseOrText {}
+extension NSString: AlignmentObjectOrCourseOrText {}

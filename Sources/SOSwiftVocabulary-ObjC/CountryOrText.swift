@@ -1,6 +1,6 @@
 import Foundation
 
 /// Country, Text
-public protocol CountryOrText {}
+@objc public protocol CountryOrText {}
 
-extension String: CountryOrText {}
+extension NSString: CountryOrText {}

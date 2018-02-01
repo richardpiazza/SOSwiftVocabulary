@@ -1,11 +1,11 @@
 import Foundation
 
-public protocol GeoCoordinatesConformance:
+@objc public protocol GeoCoordinatesConformance:
                     GeoCoordinatesOrGeoShape
                 {}
 
 /// The geographic coordinates of a place or event.
-public protocol GeoCoordinates: StructuredValue, GeoCoordinatesConformance {
+@objc public protocol GeoCoordinates: StructuredValue, GeoCoordinatesConformance {
     /// Physical address of the item.
     var address: PostalAddressOrText? { get set }
     /// The country. For example, USA. You can also provide the two-letter ISO 3166-1 alpha-2 country code.

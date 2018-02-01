@@ -4,9 +4,9 @@ import Foundation
 /// Optionally happens at a location with the help of an inanimate instrument.
 /// The execution of the action may produce a result.
 /// Specific action sub-type documentation specifies the exact expectation of each argument/role.
-public protocol Action: Thing {
+@objc public protocol Action: Thing {
     /// Indicates the current disposition of the Action.
-    var actionStatus: ActionStatus? { get set }
+    var actionStatusRawValue: NSNumber? { get set }
     /// The direct performer or driver of the action (animate or inanimate). e.g. John wrote a book.
     var agent: OrganizationOrPerson? { get set }
     /// The endTime of something. For a reserved event or service (e.g. FoodEstablishmentReservation), the time that it is expected to end. For actions that span a period of time, when the action was performed. e.g. John wrote a book from January to December.
@@ -29,4 +29,24 @@ public protocol Action: Thing {
     var startTime: DateTime? { get set }
     /// Indicates a target EntryPoint for an Action.
     var target: EntryPoint? { get set }
+}
+
+public extension Action {
+    var actionStatus: ActionStatus? {
+        get {
+            guard let rawValue = actionStatusRawValue?.intValue else {
+                return nil
+            }
+            
+            return ActionStatus(rawValue: rawValue)
+        }
+        set {
+            guard let rawValue = newValue?.rawValue else {
+                actionStatusRawValue = nil
+                return
+            }
+            
+            actionStatusRawValue = NSNumber(value: rawValue)
+        }
+    }
 }

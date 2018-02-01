@@ -1,8 +1,8 @@
 import Foundation
 
 /// Integer (Int), Text
-public protocol IntegerOrText {}
+@objc public protocol IntegerOrText {}
 
-extension Int: IntegerOrText {}
+extension NSNumber: IntegerOrText {}
 
-extension String: IntegerOrText {}
+extension NSString: IntegerOrText {}

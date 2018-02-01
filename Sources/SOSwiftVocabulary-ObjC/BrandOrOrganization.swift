@@ -1,4 +1,4 @@
 import Foundation
 
 /// Brand, Organization
-public protocol BrandOrOrganization {}
+@objc public protocol BrandOrOrganization {}

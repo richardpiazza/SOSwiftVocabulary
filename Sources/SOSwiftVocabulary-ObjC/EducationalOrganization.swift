@@ -1,5 +1,5 @@
 import Foundation
 
 /// An educational organization.
-public protocol EducationalOrganization: Organization {
+@objc public protocol EducationalOrganization: Organization {
 }

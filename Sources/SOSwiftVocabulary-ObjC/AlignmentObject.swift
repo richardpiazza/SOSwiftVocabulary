@@ -1,11 +1,11 @@
 import Foundation
 
-public protocol AlignmentObjectConformance:
+@objc public protocol AlignmentObjectConformance:
                     AlignmentObjectOrCourseOrText
                 {}
 
 /// An intangible item that describes an alignment between a learning resource and a node in an educational framework.
-public protocol AlignmentObject: Intangible, AlignmentObjectConformance {
+@objc public protocol AlignmentObject: Intangible, AlignmentObjectConformance {
     /// A category of alignment between the learning resource and the framework node. Recommended values include: 'assesses', 'teaches', 'requires', 'textComplexity', 'readingLevel', 'educationalSubject', and 'educationalLevel'.
     var alignmentType: String? { get set }
     /// The framework to which the resource being described is aligned.

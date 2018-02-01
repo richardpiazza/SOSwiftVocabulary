@@ -1,7 +1,7 @@
 import Foundation
 
 /// A musical composition.
-public protocol MusicComposition: CreativeWork {
+@objc public protocol MusicComposition: CreativeWork {
     /// The person or organization who wrote a composition, or who is the composer of a work performed at some event.
     var composer: OrganizationOrPerson? { get set }
     /// The date and place the work was first performed.

@@ -1,7 +1,7 @@
 import Foundation
 
 /// An entry point, within some Web-based protocol.
-public protocol EntryPoint: Intangible {
+@objc public protocol EntryPoint: Intangible {
     /// An application that can complete the request.
     var actionApplication: SoftwareApplication? { get set }
     /// The high level platform(s) where the Action can be performed for the given URL. To specify a specific application or operating system instance, use actionApplication.

@@ -1,7 +1,7 @@
 import Foundation
 
 /// An offer to transfer some rights to an item or to provide a service — for example, an offer to sell tickets to an event, to rent the DVD of a movie, to stream a TV show over the internet, to repair a motorcycle, or to loan a book.
-public protocol Offer: Intangible {
+@objc public protocol Offer: Intangible {
     /// The payment method(s) accepted by seller for this offer.
     var acceptedPaymentMethod: Any? { get set }
     /// An additional offer that can only be obtained in combination with the first base offer (e.g. supplements and extensions that are available for a surcharge).
@@ -13,7 +13,7 @@ public protocol Offer: Intangible {
     /// The geographic area where a service or offered item is provided. Supersedes serviceArea.
     var areaServed: AreaServed? { get set }
     /// The availability of this item—for example In stock, Out of stock, Pre-order, etc.
-    var availability: ItemAvailability? { get set }
+    var availabilityRawValue: NSNumber? { get set }
     /// The end of the availability of the product or service included in the offer.
     var availabilityEnds: DateTime? { get set }
     /// The beginning of the availability of the product or service included in the offer.
@@ -21,15 +21,15 @@ public protocol Offer: Intangible {
     /// The place(s) from which the offer can be obtained (e.g. store locations).
     var availableAtOrFrom: Place? { get set }
     /// The delivery method(s) available for this offer.
-    var availableDeliveryMethod: DeliveryMethod? { get set }
+    var availableDeliveryMethodRawValue: NSNumber? { get set }
     /// The business function (e.g. sell, lease, repair, dispose) of the offer or component of a bundle (TypeAndQuantityNode). The default is http://purl.org/goodrelations/v1#Sell.
-    var businessFunction: BusinessFunction? { get set }
+    var businessFunctionRawValue: NSNumber? { get set }
     /// A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.
     var category: PhysicalActivityCategoryOrThingOrText? { get set }
     /// The typical delay between the receipt of the order and the goods either leaving the warehouse or being prepared for pickup, in case the delivery method is on site pickup.
     var deliveryLeadTime: QuantitativeValue? { get set }
     /// The type(s) of customers for which the given offer is valid.
-    var eligibleCustomerType: BusinessEntityType? { get set }
+    var eligibleCustomerTypeRawValue: NSNumber? { get set }
     /// The duration for which the given offer is valid.
     var eligibleDuration: QuantitativeValue? { get set }
     /// The interval and unit of measurement of ordering quantities for which the offer or price specification is valid. This allows e.g. specifying that a certain freight charge is valid only for a certain quantity.
@@ -53,7 +53,7 @@ public protocol Offer: Intangible {
     /// The current approximate inventory level for the item or items.
     var inventoryLevel: QuantitativeValue? { get set }
     /// A predefined value from OfferItemCondition or a textual description of the condition of the product or service, or the products or services included in the offer.
-    var itemCondition: OfferItemCondition? { get set }
+    var itemConditionRawValue: NSNumber? { get set }
     /// The item being offered.
     var itemOffered: ProductOrService? { get set }
     /// The Manufacturer Part Number (MPN) of the product, or the product to which the offer refers.
@@ -89,4 +89,96 @@ public protocol Offer: Intangible {
     var validThrough: DateTime? { get set }
     /// The warranty promise(s) included in the offer. Supersedes warrantyPromise.
     var warranty: WarrantyPromise? { get set }
+}
+
+public extension Offer {
+    var availability: ItemAvailability? {
+        get {
+            guard let rawValue = availabilityRawValue?.intValue else {
+                return nil
+            }
+            
+            return ItemAvailability(rawValue: rawValue)
+        }
+        set {
+            guard let rawValue = newValue?.rawValue else {
+                availabilityRawValue = nil
+                return
+            }
+            
+            availabilityRawValue = NSNumber(value: rawValue)
+        }
+    }
+    
+    var availableDeliveryMethod: DeliveryMethod? {
+        get {
+            guard let rawValue = availableDeliveryMethodRawValue?.intValue else {
+                return nil
+            }
+            
+            return DeliveryMethod(rawValue: rawValue)
+        }
+        set {
+            guard let rawValue = newValue?.rawValue else {
+                availableDeliveryMethodRawValue = nil
+                return
+            }
+            
+            availableDeliveryMethodRawValue = NSNumber(value: rawValue)
+        }
+    }
+    
+    var businessFunction: BusinessFunction? {
+        get {
+            guard let rawValue = businessFunctionRawValue?.intValue else {
+                return nil
+            }
+            
+            return BusinessFunction(rawValue: rawValue)
+        }
+        set {
+            guard let rawValue = newValue?.rawValue else {
+                businessFunctionRawValue = nil
+                return
+            }
+            
+            businessFunctionRawValue = NSNumber(value: rawValue)
+        }
+    }
+    
+    var eligibleCustomerType: BusinessEntityType? {
+        get {
+            guard let rawValue = eligibleCustomerTypeRawValue?.intValue else {
+                return nil
+            }
+            
+            return BusinessEntityType(rawValue: rawValue)
+        }
+        set {
+            guard let rawValue = newValue?.rawValue else {
+                eligibleCustomerTypeRawValue = nil
+                return
+            }
+            
+            eligibleCustomerTypeRawValue = NSNumber(value: rawValue)
+        }
+    }
+    
+    var itemCondition: OfferItemCondition? {
+        get {
+            guard let rawValue = itemConditionRawValue?.intValue else {
+                return nil
+            }
+            
+            return OfferItemCondition(rawValue: rawValue)
+        }
+        set {
+            guard let rawValue = newValue?.rawValue else {
+                itemConditionRawValue = nil
+                return
+            }
+            
+            itemConditionRawValue = NSNumber(value: rawValue)
+        }
+    }
 }

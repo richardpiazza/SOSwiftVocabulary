@@ -1,4 +1,4 @@
 import Foundation
 
 /// DateOnly, DateTime
-public protocol DateOnlyOrDateTime {}
+@objc public protocol DateOnlyOrDateTime {}

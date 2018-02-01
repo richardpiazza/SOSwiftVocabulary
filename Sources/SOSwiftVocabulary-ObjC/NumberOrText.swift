@@ -1,6 +1,6 @@
 import Foundation
 
 /// Number, Text
-public protocol NumberOrText {}
+@objc public protocol NumberOrText {}
 
-extension String: NumberOrText {}
+extension NSString: NumberOrText {}

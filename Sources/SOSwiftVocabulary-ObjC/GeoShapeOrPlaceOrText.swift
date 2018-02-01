@@ -1,6 +1,6 @@
 import Foundation
 
 /// GeoShape, Place, Text
-public protocol GeoShapeOrPlaceOrText {}
+@objc public protocol GeoShapeOrPlaceOrText {}
 
-extension String: GeoShapeOrPlaceOrText {}
+extension NSString: GeoShapeOrPlaceOrText {}

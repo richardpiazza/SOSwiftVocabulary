@@ -1,13 +1,13 @@
 import Foundation
 
-public protocol PriceSpecificationConformance:
+@objc public protocol PriceSpecificationConformance:
                     MonetaryAmountOrPriceSpecification
                 {}
 
 /// A structured value representing a price or price range.
 /// Typically, only the subclasses of this type are used for markup.
 /// It is recommended to use MonetaryAmount to describe independent amounts of money such as a salary, credit card limits, etc.
-public protocol PriceSpecification: StructuredValue, PriceSpecificationConformance {
+@objc public protocol PriceSpecification: StructuredValue, PriceSpecificationConformance {
     /// The interval and unit of measurement of ordering quantities for which the offer or price specification is valid. This allows e.g. specifying that a certain freight charge is valid only for a certain quantity.
     var eligibleQuantity: QuantitativeValue? { get set }
     /// The transaction volume, in a monetary unit, for which the offer or price specification is valid, e.g. for indicating a minimal purchasing volume, to express free shipping above a certain order volume, or to limit the acceptance of credit cards to purchases to a certain minimal amount.
@@ -29,5 +29,25 @@ public protocol PriceSpecification: StructuredValue, PriceSpecificationConforman
     /// The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours.
     var validThrough: DateTime? { get set }
     /// Specifies whether the applicable value-added tax (VAT) is included in the price specification or not.
-    var valueAddedTaxIncluded: Bool? { get set }
+    var valueAddedTaxIncludedRawValue: NSNumber? { get set }
+}
+
+public extension PriceSpecification {
+    var valueAddedTaxIncluded: Bool? {
+        get {
+            guard let rawValue = valueAddedTaxIncludedRawValue?.boolValue else {
+                return nil
+            }
+            
+            return rawValue
+        }
+        set {
+            guard let rawValue = newValue else {
+                valueAddedTaxIncludedRawValue = nil
+                return
+            }
+            
+            valueAddedTaxIncludedRawValue = NSNumber(value: rawValue)
+        }
+    }
 }

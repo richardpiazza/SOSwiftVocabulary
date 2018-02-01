@@ -1,6 +1,6 @@
 import Foundation
 
 /// PostalAddress, Text
-public protocol PostalAddressOrText {}
+@objc public protocol PostalAddressOrText {}
 
-extension String: PostalAddressOrText {}
+extension NSString: PostalAddressOrText {}

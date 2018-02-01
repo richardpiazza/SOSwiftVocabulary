@@ -1,13 +1,13 @@
 import Foundation
 
-fileprivate enum _Gender: String, GenderOrText {
+fileprivate enum _Gender: String {
     case female = "Female"
     case male = "Male"
 }
 
 /// Gender of the person.
 /// While http://schema.org/Male and http://schema.org/Female may be used, text strings are also acceptable for people who do not identify as a binary gender.
-@objc public enum Gender: Int, GenderOrText {
+@objc public enum Gender: Int {
     case female
     case male
     

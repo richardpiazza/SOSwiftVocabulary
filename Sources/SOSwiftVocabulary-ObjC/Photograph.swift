@@ -1,10 +1,10 @@
 import Foundation
 
-public protocol PhotographConformance:
+@objc public protocol PhotographConformance:
                     ImageObjectOrPhotograph
                 {}
 
 /// A photograph.
-public protocol Photograph: CreativeWork, PhotographConformance {
+@objc public protocol Photograph: CreativeWork, PhotographConformance {
     
 }

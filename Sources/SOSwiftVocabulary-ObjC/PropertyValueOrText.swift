@@ -1,6 +1,6 @@
 import Foundation
 
 /// PropertyValue, Text
-public protocol PropertyValueOrText {}
+@objc public protocol PropertyValueOrText {}
 
-extension String: PropertyValueOrText {}
+extension NSString: PropertyValueOrText {}

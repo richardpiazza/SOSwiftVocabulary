@@ -1,6 +1,6 @@
 import Foundation
 
 /// DataFeedItem, Thing, Text
-public protocol DataFeedItemOrThingOrText {}
+@objc public protocol DataFeedItemOrThingOrText {}
 
-extension String: DataFeedItemOrThingOrText {}
+extension NSString: DataFeedItemOrThingOrText {}

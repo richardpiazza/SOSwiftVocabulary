@@ -1,11 +1,11 @@
 import Foundation
 
-public protocol OwnershipInfoConformance:
+@objc public protocol OwnershipInfoConformance:
                     OwnershipInfoOrProduct
                 {}
 
 /// A structured value providing information about when a certain organization or person owned a certain product.
-public protocol OwnershipInfo: StructuredValue, OwnershipInfoConformance {
+@objc public protocol OwnershipInfo: StructuredValue, OwnershipInfoConformance {
     /// The organization or person from which the product was acquired.
     var acquiredFrom: OrganizationOrPerson? { get set }
     /// The date and time of obtaining the product.

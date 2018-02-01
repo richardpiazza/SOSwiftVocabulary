@@ -1,10 +1,10 @@
 import Foundation
 
-public protocol CountryConformance:
+@objc public protocol CountryConformance:
                     CountryOrText
                 {}
 
 /// A country.
-public protocol Country: AdministrativeArea, CountryConformance {
+@objc public protocol Country: AdministrativeArea, CountryConformance {
     
 }

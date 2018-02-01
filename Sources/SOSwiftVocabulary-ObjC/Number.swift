@@ -1,13 +1,12 @@
 import Foundation
 
-public protocol NumberConformance:
+@objc public protocol NumberConformance:
                     Value,
                     NumberOrText
                 {}
 
 /// Integer (Int), Float (Double)
-public protocol Number: NumberConformance {}
+@objc public protocol Number: NumberConformance {}
 
-extension Int: Number {}
+extension NSNumber: Number {}
 
-extension Double: Number {}

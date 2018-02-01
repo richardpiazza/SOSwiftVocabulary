@@ -1,3 +1,3 @@
 import Foundation
 
-public protocol SoftwareApplicationOrWebsite {}
+@objc public protocol SoftwareApplicationOrWebsite {}

@@ -1,11 +1,11 @@
 import Foundation
 
-public protocol ProgramMembershipConformance:
+@objc public protocol ProgramMembershipConformance:
                     OrganizationOrProgramMembership
                 {}
 
 /// Used to describe membership in a loyalty programs (e.g. "StarAliance"), traveler clubs (e.g. "AAA"), purchase clubs ("Safeway Club"), etc.
-public protocol ProgramMembership: Intangible, ProgramMembershipConformance {
+@objc public protocol ProgramMembership: Intangible, ProgramMembershipConformance {
     /// The organization (airline, travelers' club, etc.) the membership is made with.
     var hostingOrganization: Organization? { get set }
     /// A member of an Organization or a ProgramMembership. Organizations can be members of organizations; ProgramMembership is typically for individuals.

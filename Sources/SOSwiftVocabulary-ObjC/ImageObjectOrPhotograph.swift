@@ -1,4 +1,4 @@
 import Foundation
 
 /// ImageObject, Photograph
-public protocol ImageObjectOrPhotograph {}
+@objc public protocol ImageObjectOrPhotograph {}

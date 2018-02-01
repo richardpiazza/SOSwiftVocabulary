@@ -1,9 +1,9 @@
 import Foundation
 
-public protocol DistanceConformance:
+@objc public protocol DistanceConformance:
                     DistanceOrQuantitativeValue
                 {}
 
-public protocol Distance: Quantity, DistanceConformance {
+@objc public protocol Distance: Quantity, DistanceConformance {
     
 }

@@ -1,6 +1,6 @@
 import Foundation
 
-public protocol PlaceConformance:
+@objc public protocol PlaceConformance:
                     PlaceOrPostalAddressOrText,
                     ContactPointOrPlace,
                     AreaServed,
@@ -8,7 +8,7 @@ public protocol PlaceConformance:
                 {}
 
 /// Entities that have a somewhat fixed, physical extension.
-public protocol Place: Thing, PlaceConformance {
+@objc public protocol Place: Thing, PlaceConformance {
     /// A property-value pair representing an additional characteristics of the entitity, e.g. a product feature or another characteristic for which there is no matching property in schema.org.
     /// - note: Publishers should be aware that applications designed to use specific schema.org properties (e.g. http://schema.org/width, http://schema.org/color, http://schema.org/gtin13, ...) will typically expect such data to be provided using those properties, rather than using the generic property/value mechanism.
     var additionalProperty: PropertyValue? { get set }
@@ -45,7 +45,7 @@ public protocol Place: Thing, PlaceConformance {
     /// An associated logo.
     var logo: ImageObjectOrURL? { get set }
     /// The total number of individuals that may attend an event or venue.
-    var maximumAttendeeCapacity: Int? { get set }
+    var maximumAttendeeCapacityRawValue: NSNumber? { get set }
     /// The opening hours of a certain place.
     var openingHoursSpecification: [OpeningHoursSpecification]? { get set }
     /// A photograph of this place.
@@ -55,10 +55,48 @@ public protocol Place: Thing, PlaceConformance {
     /// - schema.org property name: review
     var reviews: [Review]? { get set }
     /// Indicates whether it is allowed to smoke in the place, e.g. in the restaurant, hotel or hotel room.
-    var smokingAllowed: Bool? { get set }
+    var smokingAllowedRawValue: NSNumber? { get set }
     /// The special opening hours of a certain place.
     /// Use this to explicitly override general opening hours brought in scope by openingHoursSpecification or openingHours.
     var specialOpeningHoursSpecification: [OpeningHoursSpecification]? { get set }
     /// The telephone number.
     var telephone: String? { get set }
+}
+
+public extension Place {
+    var maximumAttendeeCapacity: Int? {
+        get {
+            guard let rawValue = maximumAttendeeCapacityRawValue?.intValue else {
+                return nil
+            }
+            
+            return rawValue
+        }
+        set {
+            guard let rawValue = newValue else {
+                maximumAttendeeCapacityRawValue = nil
+                return
+            }
+            
+            maximumAttendeeCapacityRawValue = NSNumber(value: rawValue)
+        }
+    }
+    
+    var smokingAllowed: Bool? {
+        get {
+            guard let rawValue = smokingAllowedRawValue?.boolValue else {
+                return nil
+            }
+            
+            return rawValue
+        }
+        set {
+            guard let rawValue = newValue else {
+                smokingAllowedRawValue = nil
+                return
+            }
+            
+            smokingAllowedRawValue = NSNumber(booleanLiteral: rawValue)
+        }
+    }
 }

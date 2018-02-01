@@ -1,6 +1,6 @@
 import Foundation
 
-public protocol ThingConformance:
+@objc public protocol ThingConformance:
                     DataFeedItemOrThingOrText,
                     ListItemOrThingOrText,
                     ThingOrText,
@@ -8,7 +8,7 @@ public protocol ThingConformance:
                 {}
 
 /// The most generic type of item.
-public protocol Thing: ThingConformance {
+@objc public protocol Thing: ThingConformance {
     /// The canonical name of this type
     static var type: String { get }
     
@@ -20,7 +20,8 @@ public protocol Thing: ThingConformance {
     /// An alias for the item.
     var alternativeName: String? { get set }
     /// A description of the item.
-    var description: String? { get set }
+    /// - schema.org property name: description
+    var shortDescription: String? { get set }
     /// A sub property of description. A short description of the item used to disambiguate from other, similar items.
     /// Information from other properties (in particular, name) may be necessary for the description to be useful for disambiguation.
     var disambiguatingDescription: String? { get set }
@@ -46,7 +47,7 @@ public protocol Thing: ThingConformance {
 }
 
 public extension Thing {
-    public static var context: String {
+    static var context: String {
         return "http://www.schema.org"
     }
 }

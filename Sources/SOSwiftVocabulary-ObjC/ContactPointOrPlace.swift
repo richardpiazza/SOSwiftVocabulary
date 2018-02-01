@@ -1,4 +1,4 @@
 import Foundation
 
 /// ContactPoint, Place
-public protocol ContactPointOrPlace {}
+@objc public protocol ContactPointOrPlace {}

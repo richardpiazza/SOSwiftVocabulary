@@ -1,4 +1,4 @@
 import Foundation
 
 /// OwnershipInfo, Product
-public protocol OwnershipInfoOrProduct {}
+@objc public protocol OwnershipInfoOrProduct {}
