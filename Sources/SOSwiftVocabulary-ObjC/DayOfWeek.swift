@@ -38,4 +38,17 @@ fileprivate enum _DayOfWeek: String {
         case .wednesday: self = .wednesday
         }
     }
+    
+    public var stringValue: String {
+        switch self {
+        case .friday: return _DayOfWeek.friday.rawValue
+        case .monday: return _DayOfWeek.monday.rawValue
+        case .publicHolidays: return _DayOfWeek.publicHolidays.rawValue
+        case .saturday: return _DayOfWeek.saturday.rawValue
+        case .sunday: return _DayOfWeek.sunday.rawValue
+        case .thursday: return _DayOfWeek.thursday.rawValue
+        case .tuesday: return _DayOfWeek.tuesday.rawValue
+        case .wednesday: return _DayOfWeek.wednesday.rawValue
+        }
+    }
 }
