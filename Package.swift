@@ -7,7 +7,6 @@ let package = Package(
     name: "SOSwiftVocabulary",
     products: [
         .library(name: "SOSwiftVocabulary", targets: ["SOSwiftVocabulary"]),
-        .library(name: "SOSwiftVocabulary-ObjC", targets: ["SOSwiftVocabulary-ObjC"]),
     ],
     dependencies: [
         
@@ -15,6 +14,5 @@ let package = Package(
     targets: [
         .target(name: "SOSwiftVocabulary", dependencies: [], path: "Sources/SOSwiftVocabulary"),
         .testTarget(name: "SOSwiftVocabularyTests", dependencies: ["SOSwiftVocabulary"], path: "Tests/SOSwiftVocabularyTests"),
-        .target(name: "SOSwiftVocabulary-ObjC", dependencies: [], path: "Sources/SOSwiftVocabulary-ObjC"),
     ]
 )

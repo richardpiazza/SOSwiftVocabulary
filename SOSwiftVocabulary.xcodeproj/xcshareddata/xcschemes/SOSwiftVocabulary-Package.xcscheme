@@ -14,20 +14,6 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "SOSwiftVocabulary::SOSwiftVocabulary-ObjC"
-               BuildableName = "SOSwiftVocabulary_ObjC.framework"
-               BlueprintName = "SOSwiftVocabulary-ObjC"
-               ReferencedContainer = "container:SOSwiftVocabulary.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "SOSwiftVocabulary::SOSwiftVocabulary"
                BuildableName = "SOSwiftVocabulary.framework"
                BlueprintName = "SOSwiftVocabulary"
@@ -71,9 +57,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "SOSwiftVocabulary::SOSwiftVocabulary-ObjC"
-            BuildableName = "SOSwiftVocabulary_ObjC.framework"
-            BlueprintName = "SOSwiftVocabulary-ObjC"
+            BlueprintIdentifier = "SOSwiftVocabulary::SOSwiftVocabulary"
+            BuildableName = "SOSwiftVocabulary.framework"
+            BlueprintName = "SOSwiftVocabulary"
             ReferencedContainer = "container:SOSwiftVocabulary.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
