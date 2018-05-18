@@ -4,5 +4,5 @@ import Foundation
 public enum WarrantyScope: String {
     case bringInLabor = "Labor-BringIn"
     case bringInPartsOrLabor = "PartsAndLabor-BringIn"
-    case pickupPartsOrLabor = "PartsAndLabor=PickUp"
+    case pickupPartsOrLabor = "PartsAndLabor-PickUp"
 }

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "SOSwiftVocabulary"
-  s.version = "1.4.0"
+  s.version = "1.4.1"
   s.summary = "The Schema.org structured data vocabulary defined as a series of swift protocols."
   s.description = <<-DESC
   Schema.org is a collaborative, community activity with a mission to create, maintain,
