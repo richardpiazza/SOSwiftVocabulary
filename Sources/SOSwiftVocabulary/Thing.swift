@@ -46,7 +46,7 @@ public protocol Thing: ThingConformance {
 }
 
 public extension Thing {
-    public static var context: String {
+    static var context: String {
         return "http://www.schema.org"
     }
 }
